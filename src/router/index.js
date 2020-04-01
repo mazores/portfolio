@@ -1,8 +1,13 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+//import Project from "../views/ProjectItem.vue";
+import VueYoutube from 'vue-youtube'
 
 Vue.use(VueRouter);
+Vue.use(VueYoutube);
+
+Vue.config.productionTip = false
 
 const routes = [
   {
@@ -11,13 +16,14 @@ const routes = [
     component: Home
   },
   {
-    path: "/about",
-    name: "About",
+    path: "/project/:id",
+    name: "Project",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+      import(/* webpackChunkName: "project" */ "../views/ProjectDetail.vue"),
+    props: true
   }
 ];
 
