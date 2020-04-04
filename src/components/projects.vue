@@ -32,9 +32,12 @@
         <router-link :to="{ name: 'Project', params: { id: `${folio.id}` } }">
           <div class="portTitle" data-aos="fade" data-aos-duration="600">
             <ul>
-                <li v-for="category in folio.categoriesList" :key="category.categoryId">
-                    <a href="#">{{ category.multimedia }}</a>
-                </li>
+              <li
+                v-for="category in folio.categoriesList"
+                :key="category.categoryId"
+              >
+                <a href="#">{{ category.multimedia }}</a>
+              </li>
             </ul>
             <!-- <h5>{{ folio.category }}</h5> -->
             <h2>{{ folio.title }}</h2>
@@ -77,45 +80,45 @@ export default {
       text-align: center;
       margin-bottom: 100px;
 
-        .portImage {
-            width: 100%;
-            margin: 0 auto;
-            margin-bottom: 25px;
-            -webkit-clip-path: inset(0 0 0 0);
-            clip-path: inset(0 0 0 0);
-            -webkit-transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-            transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-            transition-property: clip-path;
+      .portImage {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        -webkit-clip-path: inset(0 0 0 0);
+        clip-path: inset(0 0 0 0);
+        -webkit-transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-property: clip-path;
 
-            &:hover {
-            -webkit-clip-path: inset(30px 30px 30px 30px);
-            clip-path: inset(30px 30px 30px 30px);
-            }
-
-            img {
-            width: 100%;
-            }
+        &:hover {
+          -webkit-clip-path: inset(30px 30px 30px 30px);
+          clip-path: inset(30px 30px 30px 30px);
         }
 
-    .portTitle {
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            margin-bottom: 5px;
-            margin-block-start: 0;
-            margin-block-end: 0;
-            margin-inline-start: 0;
-            padding-inline-start: 0;
+        img {
+          width: 100%;
+        }
+      }
 
-            li {
-                display: inline;
-                padding: 0 5px;
-                a {
-                    color: $red;
-                    margin: 0;
-                }
+      .portTitle {
+        ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          margin-bottom: 5px;
+          margin-block-start: 0;
+          margin-block-end: 0;
+          margin-inline-start: 0;
+          padding-inline-start: 0;
+
+          li {
+            display: inline;
+            padding: 0 5px;
+            a {
+              color: $red;
+              margin: 0;
             }
+          }
         }
 
         h2 {
