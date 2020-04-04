@@ -143,11 +143,15 @@ export default {
 
         {
           id: 8,
-          title: "In Motion Branding",
+          title: "In Motion",
           categoriesList: [
             {
               categoryId: 1,
-              multimedia: "Design"
+              multimedia: "Motion"
+            },
+            {
+              categoryId: 2,
+              multimedia: "Branding"
             }
           ],
           cover: "inmotion.png"
