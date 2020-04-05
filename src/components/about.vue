@@ -46,7 +46,7 @@
     <div class="aboutContent">
       <b-container>
         <b-row class="text-left">
-          <b-col>
+          <b-col sm="4" class="px-5">
             <!-- v-for="folio in folios" :key="folio.id" v-bind:folio="folio" -->
             <h3>Values</h3>
             <div class="values" v-for="value in values" :key="value.id">
@@ -55,7 +55,7 @@
             </div>
           </b-col>
 
-          <b-col>
+          <b-col sm="4" class="px-5">
             <h3>Traits</h3>
             <div class="traits" v-for="trait in traits" :key="trait.id">
               <h4>{{ trait.title }}</h4>
@@ -63,7 +63,7 @@
             </div>
           </b-col>
 
-          <b-col>
+          <b-col sm="2">
             <h3>Skills</h3>
             <div class="skills" v-for="skill in skills" :key="skill.id">
               <h4>{{ skill.title }}</h4>
@@ -78,7 +78,7 @@
             </div>
           </b-col>
 
-          <b-col>
+          <b-col sm="2">
             <h3>Tools</h3>
             <div class="tools" v-for="tool in tools" :key="tool.id">
               <h4>{{ tool.title }}</h4>
@@ -110,51 +110,44 @@ export default {
   },
   data() {
     return {
-      // variants: ['transparent', 'secondary', 'success', 'warning', 'danger', 'info', 'light', 'dark'],
-      // headerBgVariant: 'transparent',
-      // headerTextVariant: 'transparent',
-      // bodyBgVariant: 'light',
-      // footerBgVariant: 'warning',
-      // footerTextVariant: 'dark',
-
       values: [
         {
           id: 1,
           title: "Beauty",
-          desc: "Lorem Ipum"
+          desc: "The interactive media design industry challenges the idea that beauty is superficial. Beauty is beautiful for the way that it is diverse yet universal. Each person’s understanding of what beauty is moves in different, crazy directions but it always moves towards the one, same feeling: how it is able to catch and attract a person and ultimately, kickstart a connection."
         },
 
         {
           id: 2,
           title: "Brains",
-          desc: "Lorem Ipum"
+          desc: "I believe that ideas, logic, and research is the foundation where good and effective design is built on. It is what leads us to meaning and guides us through the choices we make in all areas of a project, whether it be brainstorming, research, implementation, and more. Without it, beauty is superficial. Without it, design loses its function and simply isn't design."
         },
 
         {
           id: 3,
           title: "Substance",
-          desc: "Lorem Ipum"
+          desc: "When beauty and brains come together, they culminate into substance, into meaning. I believe that every good and effective design must have substance. I don't believe in mindlessly creating, designing, or developing. Each project is motivated by meaning, purpose, and passion. I greatly believe in this because when a design is beautiful and smart, makes sense, and fits all together, it is able to fully connect with the person who experiences it."
         }
       ],
 
       traits: [
         {
           id: 1,
-          title: "Thrives in challenging and fast-paced environments",
-          desc: "Lorem Ipum"
+          title: "Always thirsty for more learning",
+          desc: "I believe that there's always more. While I may be done with school, I am constantly looking for ways to learn--in my everyday experiences, in the people around me, in the opportunities I am lucky to have, and even on the internet."
         },
 
         {
           id: 2,
-          title: "Motivated and passionate self-starter",
-          desc: "Lorem Ipum"
+          title: "Thrives in challenging and fast-paced environments",
+          desc: "I love the challenge of working quickly yet efficiently. Fast-paced environments have trained me to quickly respond and adapt to all kinds of situations with grace, efficiency, and quality, always."
         },
 
         {
           id: 3,
-          title: "Collaborative, communicative, and accountable",
-          desc: "Lorem Ipum"
-        }
+          title: "A ball of sunshine",
+          desc: "I have a bright, happy and energetic energy that I try to apply everywhere I go and in whatever I do. I am passionate, ready to work, and always at 100%. I love working in a team as much as I love taking initiative both alone or as a leader."
+        },
       ],
 
       skills: [

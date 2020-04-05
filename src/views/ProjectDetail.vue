@@ -319,17 +319,37 @@ export default {
             {
               descriptionId: 1,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "The Ifugaos are one of the indigenous people the Philippines. Unfortunately, their indigenous knowledge—the things that make up one’s culture—is experiencing a loss of transfer to the Ifugao youth. In order to solve this and avoid the culture being lost forever, the local government provided a the IPEd curriculum, or Indigenous Peoples Education curriculum, that teaches their culture to its high school students."
             },
             {
               descriptionId: 2,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "Stories from the Grain is an online multimedia learning material that aims to provide support to the IPEd curriculum. It is a website where students can access different infographic videos that tell the different legends of Ifugao."
             },
             {
               descriptionId: 3,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "My project makes use of the rice grain as a symbol in my logo. It symbolizes how the Ifugao rice terraces, the most important and major symbol of their culture, originated from a single grain. Similarly, legends tell us the story of how the Ifugao culture came to be, which is why the grain was the perfect symbol for the project. Both legends and grains represent the origins of the Ifugao’s culture."
+            },
+            {
+              descriptionId: 4,
+              paragraph:
+                "I wanted the campaign to feel like familiar stories being told from home to the Ifugao youth. In their culture, Indigenous Knowledge is passed on orally from the elders. My branding revolved around this fact. I made use of red, which is the color the Ifugaos are known for. To complement this, I used colors that reminded one of nature: green, blue, and brown."
+            },
+            {
+              descriptionId: 5,
+              paragraph:
+                "For the videos, I wanted it to feel like it was being told from a pop-up storybook to symbolize their culture coming alive, which is why much of the animation involves elements popping up."
+            },
+            {
+              descriptionId: 6,
+              paragraph:
+                "Lastly, the website was built with the knowledge that the Ifugao youth was not as technologically savvy. With this in mind, I made sure that the website was direct to the point. It provided instructions to the user, whether it be as simple as clicking next and back to scroll through a carousel or clicking a button to go to another page."
+            },
+            {
+            descriptionId: 7,
+            paragraph:
+                "Creating a multimedia solution for indigenous peoples involve dealing with very sensitive topics. I had to make sure that the project did not misrepresent or disrespect the Ifugaos’ culture, while also making sure that it was worthy of representing them. In order to do this, I worked very closely with the Ifugaos. I had to go through a process and request approval from their local government. I worked closely with one of the IPEd curriculum’s author who provided me guidance in making sure that my information and illustrations were accurate. I hired an Ifugao translator and narrators for my videos just so that I can create it in their dialect. Most importantly, I worked closely with the Ifugao students; I consulted with them through focus group discussions and quality test sessions."
             }
           ],
           images: [
@@ -484,17 +504,17 @@ export default {
             {
               descriptionId: 1,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "To practice Cinema4D’s morphing effect, we were tasked to create an advertisement." 
             },
             {
               descriptionId: 2,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "Glossier is a beauty brand that focuses on creating and perfecting existing beauty products. They make products that people wish they had, thus their focus being on thoughtful design. They are known for being one of the first brands to market through social media and their customers as well as for the branding itself." 
             },
             {
               descriptionId: 3,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "I decided to create an advertisement for them that features their make up set which involves three of their best-selling products - boy brow, cloud paint, and lash slick - which is why I thought it would be best to showcase this set."
             }
           ],
           images: [
@@ -532,17 +552,27 @@ export default {
             {
               descriptionId: 1,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "I decided to create a fictional cupcake business wherein I was the photographer, graphic designer, and website designer and developer."
             },
             {
               descriptionId: 2,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "Araw araw translates to everyday in Filipino. The cupcake brand only serves five flavours of cupcakes and a classic chocolate chip cookie. It was started by a Filipino who moved to London, Ontario and wanted to bring her idea of home a thousand miles away through the dessert recipes she learned from her family."
             },
             {
               descriptionId: 3,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "The logo’s icon is a sun which symbolizes the Filipino word araw araw, while the cookie and cupcake merged together symbolizes the dessert menu. I decided to use warm colors throughout the brand’s materials in order to signify home. "
+            },
+            {
+              descriptionId: 4,
+              paragraph:
+                "I wanted the photos to be bright and colorful. However, grain was added to give it a film and “at-home” look. This timelessness signifies the recipes lasting through time."
+            },
+            {
+              descriptionId: 5,
+              paragraph:
+                "The photos are greatly used throughout the website and it is balanced out by solid shapes and colors. With only three pages, the website is able to achieve a simple and straightforward design." 
             }
           ],
           images: [
@@ -589,17 +619,17 @@ export default {
             {
               descriptionId: 1,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "Yellow Cab is one of the biggest pizza chains in the Philippines. In relation to their name and product (New York-style pizza), they rely heavily on a New York-inspired branding, focusing specifically on one of New York’s symbols: the yellow cab."
             },
             {
               descriptionId: 2,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "The app is designed and created for Yellow Cab customers who want another method to order from the chain. Through the app, they would be able to order food, access special promos, and contact customer service."
             },
             {
               descriptionId: 3,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "Following their branding, the app is designed in the colors yellow and black, while using white as a balancing color. Another important aspect of Yellow Cab’s branding is their boldness which is applied in the font used as well as the icons, both of which has a bold look through the incorporation of heavy weights and outlines."
             }
           ],
           images: [
@@ -647,17 +677,7 @@ export default {
             {
               descriptionId: 1,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-            },
-            {
-              descriptionId: 2,
-              paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-            },
-            {
-              descriptionId: 3,
-              paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "For a 24-hour hack-a-thon, we were tasked with a multimedia project for a smart home thermometer. Our group wanted to stray away from the usual smart thermometers in the market that make use of black and blue and decided to implement white and wood material."
             }
           ],
           images: [
@@ -721,17 +741,22 @@ export default {
             {
               descriptionId: 1,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "The brief of this project was to create a multimedia project that will encourage tourists to travel to Ontario during summer, which is its peak season. "
             },
             {
               descriptionId: 2,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "We were given a lot of leeway for the video; the only instruction was to include the tagline “Make yourself at home” and use the videos provided. This gave me the inspiration to make the video feel like home - happy, safe, at peace."
             },
             {
               descriptionId: 3,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "I started the video by introducing the various types of locations Ontario has and then transitioning it to different shots of people who look and feel happy."
+            },
+            {
+              descriptionId: 4,
+              paragraph:
+                "As for UI/UX, I helped our web designer through the finalization of the design. We were stuck with the provinces page which contained all the things to do in that specific province. We wanted to implement the full screen vertical carousel web trend but couldn’t find the proper layout for it as the title slide (the first slide) looked too similar to and blended in with the rest of the slides. After countless tests and wireframes, we were able to find the perfect design matched with the best user experience."
             }
           ],
           images: [
@@ -763,17 +788,22 @@ export default {
             {
               descriptionId: 1,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "The emphasis of this project is to be able to animate HUDS and GUIS in AfterEffects and integrate it into the video, whose theme is “The Art and Physics of Sports.” However, proper branding was still needed."
             },
             {
               descriptionId: 2,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "The name “In Motion” come from the fact that physics is about matter and energy and how they interact with each other. Because the topic of the video is sports, In Motion was an apt title as the physics of sports study how sports interact with our bodies and other matter."
             },
             {
               descriptionId: 3,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "I wanted the brand to still feel like typical HUDS and GUIS, but not completely. I did this by choosing a font that looks athletic while also looking futuristic. For the colors, I kept the typical light and dark blues but decided to use the bright and striking colors pink, purple, and yellow as a contrast to the darks."
+            },
+            {
+              descriptionId: 4,
+              paragraph:
+                "Besides trim paths and animating, I explored tracking and rotoscoping in much more depth. More than that, I was also able to explore how the animated HUDS and GUIS could interact with the videos much more seamlessly by checking for their motion and force."
             }
           ],
           images: [
@@ -821,17 +851,22 @@ export default {
             {
               descriptionId: 1,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                  "Something that I religiously stand for is the use of menstrual cups. I have always encouraged the people I know to start using them because it is so good for your body."
             },
             {
               descriptionId: 2,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "I wanted to create an ad that showcased the menstrual cup differently. Usually, when one talks about the cup, they only talk about how it’s good for the environment. I wanted to talk about how it’s good for your body and/or period."
             },
             {
               descriptionId: 3,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "However, I didn’t just want to talk and list all the benefits. I have always been interested in videos that are suggestive and controversial; the ones where you know what’s going on even though it doesn’t completely show it."
+            },
+            {
+              descriptionId: 4,
+              paragraph:
+                "My approach to the video was simple. I asked a question: If all the things that you hated about your period could be gone, would you take it? Meanwhile, symbols of these flashed on the screen (ex. Stains showed red paint dripping). By doing this, I am able to catch the user’s attention through the use of curiosity and images that are kind-of-gross-but-not-too-gross."
             }
           ]
         },
@@ -862,17 +897,7 @@ export default {
             {
               descriptionId: 1,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-            },
-            {
-              descriptionId: 2,
-              paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-            },
-            {
-              descriptionId: 3,
-              paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "In Maybelline, I worked under different brand managers. My work ranged from eye, lips, and to face makeup. More specifically, I did print and LED billboard ads, social media posts, agency video edits, Instagram stories, PR packaging, offline store collaterals, photo manipulation, and more."
             }
           ],
           images: [
