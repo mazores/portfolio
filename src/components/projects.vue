@@ -15,6 +15,7 @@
         :key="folio.id"
         v-bind:folio="folio"
       >
+        <kinesis-container>
         <!-- Portfolio featured image -->
         <div class="portImage">
           <img
@@ -31,18 +32,23 @@
         <!-- Portfolio Title -->
         <router-link :to="{ name: 'Project', params: { id: `${folio.id}` } }">
           <div class="portTitle" data-aos="fade" data-aos-duration="600">
+              <kinesis-element :strength="3" axis="x">
             <ul>
               <li
                 v-for="category in folio.categoriesList"
                 :key="category.categoryId"
-              >
-                <a href="#">{{ category.multimedia }}</a>
+              > 
+                    <a href="#">{{ category.multimedia }}</a>
               </li>
             </ul>
+              </kinesis-element>
             <!-- <h5>{{ folio.category }}</h5> -->
+            <kinesis-element :strength="10">
             <h2>{{ folio.title }}</h2>
+            </kinesis-element>
           </div>
         </router-link>
+      </kinesis-container>
       </b-col>
     </b-row>
   </b-container>
@@ -51,6 +57,7 @@
 <script>
 //import projectsItem from "./projectsItem";
 //import Parallax from "vue-parallaxy";
+
 
 export default {
   name: "projects",
@@ -71,6 +78,8 @@ export default {
 
   .projects {
     margin: 0 auto;
+
+    a { text-decoration: none; }
 
     .project-item {
       display: flex;
@@ -97,10 +106,17 @@ export default {
 
         img {
           width: 100%;
+
+          &:hover {
+            cursor: pointer;
+          }
         }
       }
 
       .portTitle {
+        position: relative;
+        width: auto;
+
         ul {
           list-style-type: none;
           padding: 0;
@@ -110,20 +126,60 @@ export default {
           margin-block-end: 0;
           margin-inline-start: 0;
           padding-inline-start: 0;
+          text-decoration: none!important;
 
           li {
             display: inline;
             padding: 0 5px;
+            position: relative;
+
+            &:hover {
+              color: $red;
+            }
+
+            &:after {
+              background: none repeat scroll 0 0 transparent;
+              bottom: 5px;
+              content: "";
+              display: block;
+              height: 10px;
+              left: 0;
+              position: absolute;
+              background: $yellow;
+              transition: width 0.3s ease 0s, left 0.3s ease 0s;
+              width: 0;
+              z-index: -3;
+            }
+
+            &:hover:after {
+              width: 100%; 
+              left: 0; 
+            }
+
             a {
               color: $red;
               margin: 0;
+              text-decoration: none!important;
+              text-transform: uppercase;
+              letter-spacing: 2px;
+
+              &:hover {
+                text-decoration: none;
+              }
             }
           }
         }
 
         h2 {
           color: $red;
-        }
+          text-decoration: none;
+          transition: text-shadow 0.2s, color 0.4s;
+          margin-top: 10px;
+
+          &:hover {
+            text-shadow: 2px 2px $red;
+            color: $yellow;
+          }
 
         h5 {
           color: $red;
@@ -131,7 +187,7 @@ export default {
       }
     }
   }
-}
+  }
 
 .project-item:nth-child(2),
 .project-item:nth-child(3),
@@ -139,8 +195,10 @@ export default {
 .project-item:nth-child(7),
 .project-item:nth-child(10) {
   width: 30% !important;
+
   .portImage {
     width: 80% !important;
   }
+}
 }
 </style>

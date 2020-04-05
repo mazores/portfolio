@@ -1,17 +1,19 @@
 <template>
   <div class="aboutContainer">
     <!-- Demo Reel -->
-    <b-container class="reelContainer">
+    <b-container class="reelContainer" id="trigger-nav" data-aos="fade-up" data-aos-duration="250" data-aos-delay="2200" data-aos-easing="ease-in">
       <h1 class="hidden">Demo Reel</h1>
       <img
         src="@/assets/icon-play.svg"
         alt="play button"
         class="play"
+        id="play-button"
         v-b-modal.modal-reel
       />
       <img
         src="@/assets/video.png"
         alt="demo reel cover photo"
+        class="demo-reel-cover"
         v-b-modal.modal-reel
       />
     </b-container>
@@ -334,12 +336,18 @@ export default {
     .close {
       color: $red;
       opacity: 1;
-      text-shadow: none;
+      transition: transform 0.5s;
+
+      // &:hover,
+      // :active {
+      //   transform: rotate(90deg);
+      // }
     }
 
     .close:not(:disabled):not(.disabled):focus,
     .close:not(:disabled):not(.disabled):hover {
       opacity: 1;
+      transform: rotate(180deg);
     }
   }
 }
@@ -380,9 +388,24 @@ export default {
       height: 3.3vh;
       position: absolute;
       top: 50%;
+      z-index: 5;
     }
+
     img {
       width: 100%;
+      transition: all 400ms ease 0s;
+
+      &:hover {
+        cursor: pointer;
+        -webkit-transition: all 400ms ease 0s;
+        -webkit-transform: scale(1.1); 
+        -ms-transition: all 400ms ease 0s;
+        -ms-transform: scale(1.1); 
+        -moz-transition: all 400ms ease 0s;
+        -moz-transformz : scale(1.1);
+        transform: scale(1.1);   
+      }
+
     }
   }
 

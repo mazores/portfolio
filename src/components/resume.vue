@@ -3,17 +3,25 @@
     <b-container class="container">
       <b-row class="iconsContainer" align-h="between" align-v="center">
         <b-col class="icons">
-          <b-button class="icons" v-b-modal.modal-resume>
-            <img src="@/assets/resume.svg" alt="resume icon" />
-            <h3>Read resume</h3>
-          </b-button>
+          <kinesis-container>
+            <b-button class="icons" v-b-modal.modal-resume>
+              <kinesis-element :strength="10">
+                <img src="@/assets/resume.svg" alt="resume icon" />
+              </kinesis-element>
+                <h3>Read resume</h3>
+            </b-button>
+          </kinesis-container>
         </b-col>
 
         <b-col class="icons right">
-          <b-button class="icons" id="fun-fact" href="#" tabindex="0">
-            <img src="@/assets/funfact.svg" alt="fun fact icon" />
-            <h3>Click for a fun fact!</h3>
-          </b-button>
+          <kinesis-container>
+            <b-button class="icons" id="fun-fact" href="#" tabindex="0">
+              <kinesis-element :strength="10">
+                <img src="@/assets/funfact.svg" alt="fun fact icon" />
+              </kinesis-element>
+                <h3>Click for a fun fact!</h3>
+            </b-button>
+          </kinesis-container>
         </b-col>
       </b-row>
 

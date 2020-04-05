@@ -72,7 +72,7 @@
         <div>
           <!-- VIDEO -->
           <!-- Hero image -->
-          <div v-if="folio.herovideo" class="heroimgContainer">
+          <div v-if="folio.herovideo" class="heroimgContainer with-video">
             <!-- Play button -->
             <img
               src="@/assets/icon-play.svg"
@@ -263,7 +263,7 @@
         :key="folio.id"
         v-bind:folio="folio"
       >
-        4
+        <youtube :video-id="folio.videoId" ref="youtube" @playing="playing"></youtube>
       </div>
     </b-modal>
     <footercomp />
@@ -759,21 +759,6 @@ export default {
           herovideo: "yes",
           heroimage: "inmotion.png",
           videoId: "GIrZhiTU_iw",
-          // rolesList: [
-          //     {
-          //         roleId: 1,
-          //         job: "Designer"
-          //     },
-          //     {
-          //         roleId: 2,
-          //         job: "Motion Designer"
-          //     }
-          // ],
-          // teamList: [
-          //     {
-          //         member: "Lan Le"
-          //     }
-          // ],
           descriptions: [
             {
               descriptionId: 1,
@@ -969,7 +954,14 @@ export default {
 
 <style lang="scss" scoped>
 .project-details {
-  .project-nav {
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .project-nav {
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -1015,6 +1007,11 @@ export default {
     border-radius: 0 0 30px 30px;
 
     .project-details-hero {
+        .with-video {
+            &:hover {
+                cursor: pointer;
+            }
+        }
       .heroimgContainer {
         width: 70%;
         margin: 0 auto;
@@ -1064,7 +1061,7 @@ export default {
 
   .red {
     background-color: $red;
-    margin-top: -40px;
+    margin-top: -50px;
     z-index: -1;
   }
 
