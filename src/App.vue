@@ -10,6 +10,11 @@
 </template>
 
 <style lang="scss">
+body[data-aos-duration='4000'] [data-aos],
+  [data-aos][data-aos][data-aos-duration='4000'] {
+    transition-duration: 4000ms;
+}
+
 #app {
   font-family: $Poppins;
   -webkit-font-smoothing: antialiased;

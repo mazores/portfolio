@@ -131,7 +131,17 @@ export default {
         width: 50%;
         background-color: $blue;
         border: none !important;
+        color: $navy;
+        transition: box-shadow 0.3s, background-color 0.3s;
+
+        &:hover,
+        :active {
+          box-shadow: 5px 5px $yellow;
+          background-color: $navy;
+          color: $blue;
+        }
       }
+    
 
       .noshadow {
         -webkit-box-shadow: none !important;

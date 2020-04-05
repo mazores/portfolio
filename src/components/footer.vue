@@ -45,6 +45,20 @@ export default {
   justify-content: space-between;
 
   .logo {
+    img {
+      &:hover {
+              // transform: scale(1.2);
+              -webkit-transition: all 200ms ease 0s;
+              -webkit-transform: scale(1.1); 
+              -ms-transition: all 200ms ease 0s;
+              -ms-transform: scale(1.1); 
+              -moz-transition: all 200ms ease 0s;
+              -moz-transformz : scale(1.1);
+              transition: all 200ms ease 0s;
+              transform: scale(1.1);   
+            }
+    }
+    
   }
 
   .goodbye {
@@ -61,6 +75,25 @@ export default {
       li {
         margin-left: 50px;
         display: inline-block;
+
+        a {
+          img {
+            // height: auto;
+            // transition: scale 1s ease 0s;
+
+            &:hover {
+              // transform: scale(1.2);
+              -webkit-transition: all 180ms ease;
+              -webkit-transform: scale(1.2); 
+              -ms-transition: all 180ms ease;
+              -ms-transform: scale(1.2); 
+              -moz-transition: all 180ms ease;
+              -moz-transform: scale(1.2);
+              transition: all 180ms ease;
+              transform: scale(1.2);   
+            }
+          }
+        }
       }
     }
   }
