@@ -11,7 +11,6 @@ Vue.use(VueYoutube);
 Vue.use(VueKinesis);
 Vue.use(VuePageTransition);
 
-
 Vue.config.productionTip = false;
 
 const routes = [

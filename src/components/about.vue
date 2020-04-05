@@ -46,7 +46,7 @@
     <div class="aboutContent">
       <b-container>
         <b-row class="text-left">
-          <b-col sm="4">
+          <b-col sm="4" class="px-5">
             <!-- v-for="folio in folios" :key="folio.id" v-bind:folio="folio" -->
             <h3>Values</h3>
             <div class="values" v-for="value in values" :key="value.id">
@@ -55,7 +55,7 @@
             </div>
           </b-col>
 
-          <b-col sm="4">
+          <b-col sm="4" class="px-5">
             <h3>Traits</h3>
             <div class="traits" v-for="trait in traits" :key="trait.id">
               <h4>{{ trait.title }}</h4>
