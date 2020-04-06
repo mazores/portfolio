@@ -38,7 +38,7 @@
       data-aos-delay="800"
       data-aos-easing="ease-out-back"
     >
-      🤘🏽
+      🤘🏽,
     </h2>
 
     <br />
