@@ -1,7 +1,14 @@
 <template>
   <div class="aboutContainer">
     <!-- Demo Reel -->
-    <b-container class="reelContainer" id="trigger-nav" data-aos="fade-up" data-aos-duration="250" data-aos-delay="2200" data-aos-easing="ease-in">
+    <b-container
+      class="reelContainer"
+      id="trigger-nav"
+      data-aos="fade-up"
+      data-aos-duration="250"
+      data-aos-delay="2200"
+      data-aos-easing="ease-in"
+    >
       <h1 class="hidden">Demo Reel</h1>
       <img
         src="@/assets/icon-play.svg"
@@ -24,7 +31,7 @@
       centered
       title="Modal for Demo Reel"
       size="lg"
-      busy="true"
+      busy: true
       hide-footer
       modal-class="modal-container"
       content-class="modal-content"
@@ -46,7 +53,14 @@
     <div class="aboutContent">
       <b-container>
         <b-row class="text-left justify-content-center">
-          <b-col cols="5" sm="4" class="pr-lg-5" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in">
+          <b-col
+            cols="5"
+            sm="4"
+            class="pr-lg-5"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-easing="ease-in"
+          >
             <!-- v-for="folio in folios" :key="folio.id" v-bind:folio="folio" -->
             <h3>Values</h3>
             <div class="values" v-for="value in values" :key="value.id">
@@ -55,7 +69,15 @@
             </div>
           </b-col>
 
-          <b-col cols="5"  sm="4" class="pr-lg-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-easing="ease-in">
+          <b-col
+            cols="5"
+            sm="4"
+            class="pr-lg-5"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="300"
+            data-aos-easing="ease-in"
+          >
             <h3>Traits</h3>
             <div class="traits" v-for="trait in traits" :key="trait.id">
               <h4>{{ trait.title }}</h4>
@@ -63,7 +85,14 @@
             </div>
           </b-col>
 
-          <b-col cols="5" sm="2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600" data-aos-easing="ease-in">
+          <b-col
+            cols="5"
+            sm="2"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="600"
+            data-aos-easing="ease-in"
+          >
             <h3>Skills</h3>
             <div class="skills" v-for="skill in skills" :key="skill.id">
               <h4>{{ skill.title }}</h4>
@@ -78,7 +107,14 @@
             </div>
           </b-col>
 
-          <b-col cols="5" sm="2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="900" data-aos-easing="ease-in">
+          <b-col
+            cols="5"
+            sm="2"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="900"
+            data-aos-easing="ease-in"
+          >
             <h3>Tools</h3>
             <div class="tools" v-for="tool in tools" :key="tool.id">
               <h4>{{ tool.title }}</h4>
@@ -114,19 +150,22 @@ export default {
         {
           id: 1,
           title: "Beauty",
-          desc: "Beauty is diverse yet universal. Each person’s understanding of what beauty is moves in different, crazy directions but it always moves towards the one, same feeling: how it is able to catch and attract a person and ultimately, kickstart a connection."
+          desc:
+            "Beauty is diverse yet universal. Each person’s understanding of what beauty is moves in different, crazy directions but it always moves towards the one, same feeling: how it is able to catch and attract a person and ultimately, kickstart a connection."
         },
 
         {
           id: 2,
           title: "Brains",
-          desc: "Ideas, logic, and research is the foundation where good and effective design is built on. It is what leads us to meaning and guides us through the choices we make in all areas of a project, whether it be brainstorming, research, implementation, and more. Without it, beauty is superficial. Without it, design loses its function and simply isn't design."
+          desc:
+            "Ideas, logic, and research is the foundation where good and effective design is built on. It is what leads us to meaning and guides us through the choices we make in all areas of a project, whether it be brainstorming, research, implementation, and more. Without it, beauty is superficial. Without it, design loses its function and simply isn't design."
         },
 
         {
           id: 3,
           title: "Substance",
-          desc: "When beauty and brains come together, they culminate into substance, into meaning. I believe that every good and effective design must have substance. I don't believe in mindlessly creating, designing, or developing. Each project is motivated by meaning, purpose, and passion. I greatly believe in this because when a design is beautiful and smart, makes sense, and fits all together, it is able to fully connect with the person who experiences it."
+          desc:
+            "When beauty and brains come together, they culminate into substance, into meaning. I believe that every good and effective design must have substance. I don't believe in mindlessly creating, designing, or developing. Each project is motivated by meaning, purpose, and passion. I greatly believe in this because when a design is beautiful and smart, makes sense, and fits all together, it is able to fully connect with the person who experiences it."
         }
       ],
 
@@ -134,20 +173,23 @@ export default {
         {
           id: 1,
           title: "Always thirsty for more learning",
-          desc: "I believe that there's always more. While I may be done with school, I am constantly looking for ways to learn--in my everyday experiences, in the people around me, in the opportunities I am lucky to have, and even on the internet."
+          desc:
+            "I believe that there's always more. While I may be done with school, I am constantly looking for ways to learn--in my everyday experiences, in the people around me, in the opportunities I am lucky to have, and even on the internet."
         },
 
         {
           id: 2,
           title: "Thrives in challenging and fast-paced environments",
-          desc: "I love the challenge of working quickly yet efficiently. Fast-paced environments have trained me to quickly respond and adapt to all kinds of situations with grace, efficiency, and quality, always."
+          desc:
+            "I love the challenge of working quickly yet efficiently. Fast-paced environments have trained me to quickly respond and adapt to all kinds of situations with grace, efficiency, and quality, always."
         },
 
         {
           id: 3,
           title: "A ball of sunshine",
-          desc: "I have a bright, happy and energetic energy that I try to apply everywhere I go and in whatever I do. I am passionate, ready to work, and always at 100%. I love working in a team as much as I love taking initiative both alone or as a leader."
-        },
+          desc:
+            "I have a bright, happy and energetic energy that I try to apply everywhere I go and in whatever I do. I am passionate, ready to work, and always at 100%. I love working in a team as much as I love taking initiative both alone or as a leader."
+        }
       ],
 
       skills: [
@@ -386,12 +428,12 @@ export default {
       &:active {
         cursor: pointer;
         -webkit-transition: all 400ms ease 0s;
-        -webkit-transform: scale(1.1); 
+        -webkit-transform: scale(1.1);
         -ms-transition: all 400ms ease 0s;
-        -ms-transform: scale(1.1); 
+        -ms-transform: scale(1.1);
         -moz-transition: all 400ms ease 0s;
-        -moz-transformz : scale(1.1);
-        transform: scale(1.1);   
+        -moz-transformz: scale(1.1);
+        transform: scale(1.1);
       }
     }
   }

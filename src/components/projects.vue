@@ -17,39 +17,39 @@
         v-bind:folio="folio"
       >
         <kinesis-container>
-        <!-- Portfolio featured image -->
-        <router-link :to="{ name: 'Project', params: { id: `${folio.id}` } }">
-        <div class="portImage">
-          <img
-            :src="require(`@/assets/port-cover-${folio.cover}`)"
-            alt
-            class="icon"
-            data-aos="fade-up"
-            data-aos-easing="ease-in-out"
-            data-aos-duration="600"
-            data-aos-delay="350"
-          />
-        </div>
+          <!-- Portfolio featured image -->
+          <router-link :to="{ name: 'Project', params: { id: `${folio.id}` } }">
+            <div class="portImage">
+              <img
+                :src="require(`@/assets/port-cover-${folio.cover}`)"
+                alt
+                class="icon"
+                data-aos="fade-up"
+                data-aos-easing="ease-in-out"
+                data-aos-duration="600"
+                data-aos-delay="350"
+              />
+            </div>
 
-        <!-- Portfolio Title -->
-          <div class="portTitle" data-aos="fade" data-aos-duration="600">
+            <!-- Portfolio Title -->
+            <div class="portTitle" data-aos="fade" data-aos-duration="600">
               <kinesis-element :strength="3" axis="x">
-            <ul>
-              <li
-                v-for="category in folio.categoriesList"
-                :key="category.categoryId"
-              > 
+                <ul>
+                  <li
+                    v-for="category in folio.categoriesList"
+                    :key="category.categoryId"
+                  >
                     <h5>{{ category.multimedia }}</h5>
-              </li>
-            </ul>
+                  </li>
+                </ul>
               </kinesis-element>
-            <!-- <h5>{{ folio.category }}</h5> -->
-            <kinesis-element :strength="10">
-            <h2>{{ folio.title }}</h2>
-            </kinesis-element>
-          </div>
-        </router-link>
-      </kinesis-container>
+              <!-- <h5>{{ folio.category }}</h5> -->
+              <kinesis-element :strength="10">
+                <h2>{{ folio.title }}</h2>
+              </kinesis-element>
+            </div>
+          </router-link>
+        </kinesis-container>
       </b-col>
     </b-row>
   </b-container>
@@ -58,7 +58,6 @@
 <script>
 //import projectsItem from "./projectsItem";
 //import Parallax from "vue-parallaxy";
-
 
 export default {
   name: "projects",
@@ -80,7 +79,9 @@ export default {
   .projects {
     margin: 0 auto;
 
-    a { text-decoration: none; }
+    a {
+      text-decoration: none;
+    }
 
     .project-item {
       display: flex;
@@ -127,7 +128,7 @@ export default {
           margin-block-end: 0;
           margin-inline-start: 0;
           padding-inline-start: 0;
-          text-decoration: none!important;
+          text-decoration: none !important;
 
           li {
             display: inline;
@@ -153,14 +154,14 @@ export default {
             }
 
             &:hover:after {
-              width: 100%; 
-              left: 0; 
+              width: 100%;
+              left: 0;
             }
 
             h5 {
               color: $red;
               margin: 0;
-              text-decoration: none!important;
+              text-decoration: none !important;
               text-transform: uppercase;
               letter-spacing: 2px;
               display: inline-block;
@@ -183,30 +184,29 @@ export default {
             color: $yellow;
           }
 
-        h5 {
-          color: $red;
+          h5 {
+            color: $red;
+          }
         }
       }
     }
   }
-  }
 
-.project-item:nth-child(2),
-.project-item:nth-child(4),
-.project-item:nth-child(6),
-.project-item:nth-child(8),
-.project-item:nth-child(10) {
-  width: 30%;
+  .project-item:nth-child(2),
+  .project-item:nth-child(4),
+  .project-item:nth-child(6),
+  .project-item:nth-child(8),
+  .project-item:nth-child(10) {
+    width: 30%;
 
-  .portImage {
-    width: 80%;
+    .portImage {
+      width: 80%;
+    }
   }
-}
 }
 
 // TABLET
 @media screen and (min-width: 720px) {
-
   .projects-Container {
     .projects {
       .project-item {
@@ -219,7 +219,7 @@ export default {
   .project-item:nth-child(6),
   .project-item:nth-child(7),
   .project-item:nth-child(10) {
-    width: 30%!important;
+    width: 30% !important;
 
     .portImage {
       width: 80% !important;
@@ -227,14 +227,14 @@ export default {
   }
 
   .project-item:nth-child(4),
-  .project-item:nth-child(8){
-    width: 100%!important;
+  .project-item:nth-child(8) {
+    width: 100% !important;
 
     .portImage {
-      width: 100%!important;
+      width: 100% !important;
 
       img {
-        width: 100%!important;
+        width: 100% !important;
       }
     }
   }
@@ -323,8 +323,8 @@ export default {
 //             }
 
 //             &:hover:after {
-//               width: 100%; 
-//               left: 0; 
+//               width: 100%;
+//               left: 0;
 //             }
 
 //             a {
@@ -359,6 +359,4 @@ export default {
 //     }
 //   }
 //   }
-
-
 </style>
