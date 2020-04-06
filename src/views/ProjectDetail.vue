@@ -146,8 +146,9 @@
       >
         <!-- Left Column -->
         <b-col
-          class="project-info"
-          md="3"
+          class="project-info px-5 mb-3"
+          cols="12"
+          md="4"
           data-aos="fade-up"
           data-aos-easing="ease-in-out"
           data-aos-duration="600"
@@ -199,8 +200,9 @@
 
         <!-- Right Column -->
         <b-col
-          md="4"
-          class="project-description"
+          cols="12"
+          md="6"
+          class="project-description px-5 pt-2"
           data-aos="fade-up"
           data-aos-easing="ease-in-out"
           data-aos-duration="600"
@@ -979,21 +981,22 @@ export default {
 
 <style lang="scss" scoped>
 .project-details {
-    a {
-        text-decoration: none;
+  a {
+    text-decoration: none;
 
-        &:hover {
-            text-decoration: none;
-        }
+    &:hover {
+        text-decoration: none;
     }
-    .project-nav {
+  }
+
+  .project-nav {
     width: 100vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     background-color: $navy;
-    padding: 20px 30px;
+    padding: 20px 20px;
     position: fixed;
     z-index: 100;
 
@@ -1010,155 +1013,289 @@ export default {
       }
     }
 
-    .to-projects {
-      transition: transform 1s;
+  .to-projects {
+    transition: transform 1s;
+
+    &:hover,
+    :active {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.project-hero-container {
+  width: 100vw;
+  height: 80vh;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $blue;
+  border-radius: 0 0 30px 30px;
+
+  .project-details-hero {
+    .with-video {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .heroimgContainer {
+      width: 90%;
+      margin: 0 auto;
+      border-radius: 20px;
+      z-index: 2;
+      overflow: hidden;
+      position: relative;
+      transition: box-shadow 0.5s;
 
       &:hover,
       :active {
-        transform: rotate(90deg);
+        box-shadow: 10px 10px $yellow;
+      }
+
+      .play {
+        height: 3.3vh;
+        position: absolute;
+        top: 50%;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .scroll-down-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 0;
+
+      .scroll-down {
+        background: none;
+        border: none;
       }
     }
   }
+}
 
-  .project-hero-container {
-    width: 100vw;
-    height: 100vh;
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: $blue;
-    border-radius: 0 0 30px 30px;
+.border-design {
+  position: absolute;
+  width: 100vw;
+  height: 10vh;
+  border-radius: 0 0 30px 30px;
+}
 
-    .project-details-hero {
-        .with-video {
-            &:hover {
-                cursor: pointer;
-            }
-        }
-      .heroimgContainer {
-        width: 70%;
-        margin: 0 auto;
-        border-radius: 30px;
-        z-index: 2;
-        overflow: hidden;
-        position: relative;
-        transition: box-shadow 0.5s;
+.red {
+  background-color: $red;
+  margin-top: -30px;
+  z-index: -1;
+}
 
-        &:hover,
-        :active {
-          box-shadow: 10px 10px $yellow;
-        }
+.yellow {
+  background-color: $yellow;
+  margin-top: -10px;
+  z-index: -2;
+}
 
-        .play {
-          height: 3.3vh;
-          position: absolute;
-          top: 50%;
-        }
+.project-details-description {
+  position: relative;
+  margin-top: 40px;
+  text-align: left;
 
-        img {
-          width: 100%;
-        }
-      }
+  h2 {
+    color: $red;
+    margin-bottom: 10px;
+  }
+  h4 {
+    color: $blue;
+    margin-bottom: 15px;
+  }
 
-      .scroll-down-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 0;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
 
-        .scroll-down {
-          background: none;
-          border: none;
-        }
-      }
+    li {
+      display: inline;
+      padding: 0 5px 0 0;
     }
   }
 
-  .border-design {
-    position: absolute;
-    width: 100vw;
-    height: 10vh;
-    border-radius: 0 0 30px 30px;
-  }
-
-  .red {
-    background-color: $red;
-    margin-top: -50px;
-    z-index: -1;
-  }
-
-  .yellow {
-    background-color: $yellow;
-    margin-top: -15px;
-    z-index: -2;
-  }
-
-  .project-details-description {
-    position: relative;
-    margin-top: 100px;
-    text-align: left;
-
-    h2 {
+  .project-info {
+    p {
       color: $red;
-      margin-bottom: 30px;
+      margin: 0;
+      line-height: 0;
     }
-    h4 {
+
+    .project-category li {
+      display: inline-block;
       color: $blue;
-      margin-bottom: 15px;
+      padding: 0 5px 0 0;
     }
 
-    ul {
-      list-style-type: none;
-      padding: 0;
-      margin-block-start: 0;
-      margin-block-end: 0;
-      margin-inline-start: 0;
-      padding-inline-start: 0;
-
-      li {
-        display: inline;
-        padding: 0 5px 0 0;
-      }
+    .role,
+    .team,
+    .award {
+      margin: 15px 0 15px 0;
     }
-
-    .project-info {
-      p {
-        color: $red;
-        margin: 0;
-        line-height: 0;
-      }
-
-      .project-category li {
-        display: inline-block;
-        color: $blue;
-        padding: 0 5px 0 0;
-      }
-
-      .role,
-      .team,
-      .award {
-        margin: 15px 0 15px 0;
-      }
-    }
-
-    // .project-description {
-    // }
   }
 
-  .project-images {
+  .project-description {
     ul {
-      list-style-type: none;
       li {
-        img {
-          width: 100%;
-          height: 100%;
-          margin-bottom: 10px;
+        display: block;
+      }
+    }
+  }
+}
+
+.project-images {
+  ul {
+    list-style-type: none;
+    li {
+      img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+}
+
+@media screen and (min-width: 375px) {
+  .project-details {
+    .red {
+      margin-top: -35px;
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .project-details {
+    .project-hero-container {
+      height: 60vh;
+      .project-details-hero {
+        .heroimgContainer {
+          width: 70%;
+        }
+      }
+    }
+
+    .red {
+      margin-top: -60px;
+    }
+
+    .yellow {
+      margin-top: -30px;
+    }
+
+    .project-details-description {
+      margin-top: 100px;
+
+      h2 {
+        margin-bottom: 30px;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0;
+        padding-inline-start: 0;
+
+        li {
+          display: inline;
+          padding: 0 5px 0 0;
+        }
+      }
+
+      .project-info {
+        p {
+          color: $red;
+          margin: 0;
+          line-height: 23px;
+          display: inline-block;
+        }
+
+        .project-category li {
+          display: inline-block;
+          color: $blue;
+          padding: 0 5px 0 0;
+        }
+
+        .role,
+        .team,
+        .award {
+          margin: 15px 0 30px 0;
         }
       }
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+.project-details {
+  .project-details-description {
+      margin-top: 130px;
+  }
+
+  .red {
+    margin-top: -80px;
+  }
+
+  .yellow {
+    margin-top: -35px;
+  }
+}
+
+}
+
+@media screen and (min-width: 1280px) {
+  .project-details {
+    .project-hero-container {
+      height: 100vh;
+    }
+
+    .project-details-description {
+      h4 {
+        margin-bottom: 15px;
+      }
+      
+      .project-info {
+        p {
+          color: $red;
+          margin: 0;
+          line-height: 0;
+          display: block;
+        }
+
+        .project-category li {
+          display: inline-block;
+          color: $blue;
+          padding: 0 5px 0 0;
+        }
+      }
+    }
+  }
+
+  .red {
+    margin-top: -30px!important;
+  }
+
+  .yellow {
+    margin-top: 10px!important;
+  }
+}
+
 </style>
