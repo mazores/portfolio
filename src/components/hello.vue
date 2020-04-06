@@ -28,7 +28,7 @@ export default {
   margin: 0 auto;
   padding-top: 0;
   text-align: left;
-  margin-top: 150px;
+  margin-top: 15git0px;
   margin-bottom: 30px;
 
   h2 {

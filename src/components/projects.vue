@@ -18,6 +18,7 @@
       >
         <kinesis-container>
         <!-- Portfolio featured image -->
+        <router-link :to="{ name: 'Project', params: { id: `${folio.id}` } }">
         <div class="portImage">
           <img
             :src="require(`@/assets/port-cover-${folio.cover}`)"
@@ -31,7 +32,6 @@
         </div>
 
         <!-- Portfolio Title -->
-        <router-link :to="{ name: 'Project', params: { id: `${folio.id}` } }">
           <div class="portTitle" data-aos="fade" data-aos-duration="600">
               <kinesis-element :strength="3" axis="x">
             <ul>
@@ -39,7 +39,7 @@
                 v-for="category in folio.categoriesList"
                 :key="category.categoryId"
               > 
-                    <a href="#">{{ category.multimedia }}</a>
+                    <h5>{{ category.multimedia }}</h5>
               </li>
             </ul>
               </kinesis-element>
@@ -157,12 +157,13 @@ export default {
               left: 0; 
             }
 
-            a {
+            h5 {
               color: $red;
               margin: 0;
               text-decoration: none!important;
               text-transform: uppercase;
               letter-spacing: 2px;
+              display: inline-block;
 
               &:hover {
                 text-decoration: none;
