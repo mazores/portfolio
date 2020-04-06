@@ -103,7 +103,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.tablet { display: none; }
+.tablet, .scrolling-nav { display: none; }
 nav {
   display: flex;
   flex-direction: row;
