@@ -55,7 +55,7 @@ export default {
         },
         {
           id: 2,
-          title: "Meet HIV",
+          title: "Medical Website Template",
           categoriesList: [
             {
               categoryId: 1,
@@ -63,30 +63,14 @@ export default {
             },
             {
               categoryId: 2,
-              multimedia: "Motion"
-            },
-            {
-              categoryId: 3,
               multimedia: "Design"
             }
           ],
-          cover: "storiesfromthegrain.png"
+          cover: "hwcc.png"
         },
 
         {
           id: 3,
-          title: "Glossier",
-          categoriesList: [
-            {
-              categoryId: 1,
-              multimedia: "Motion"
-            }
-          ],
-          cover: "glossier.png"
-        },
-
-        {
-          id: 4,
           title: "Araw-Araw Desserts",
           categoriesList: [
             {
@@ -98,51 +82,7 @@ export default {
         },
 
         {
-          id: 5,
-          title: "Yellow Cab App",
-          categoriesList: [
-            {
-              categoryId: 1,
-              multimedia: "UI/UX"
-            },
-            {
-              categoryId: 2,
-              multimedia: "Design"
-            }
-          ],
-          cover: "yellowcab.png"
-        },
-
-        {
-          id: 6,
-          title: "Thermal Security",
-          categoriesList: [
-            {
-              categoryId: 1,
-              multimedia: "Motion"
-            }
-          ],
-          cover: "thermo.png"
-        },
-
-        {
-          id: 7,
-          title: "Ontario Summer",
-          categoriesList: [
-            {
-              categoryId: 1,
-              multimedia: "Motion"
-            },
-            {
-              categoryId: 2,
-              multimedia: "UI/UX"
-            }
-          ],
-          cover: "osummer.jpg"
-        },
-
-        {
-          id: 8,
+          id: 4,
           title: "In Motion",
           categoriesList: [
             {
@@ -158,7 +98,35 @@ export default {
         },
 
         {
-          id: 9,
+          id: 5,
+          title: "Thermal Security",
+          categoriesList: [
+            {
+              categoryId: 1,
+              multimedia: "Motion"
+            }
+          ],
+          cover: "thermo.png"
+        },
+
+        {
+          id: 6,
+          title: "Yellow Cab App",
+          categoriesList: [
+            {
+              categoryId: 1,
+              multimedia: "UI/UX"
+            },
+            {
+              categoryId: 2,
+              multimedia: "Design"
+            }
+          ],
+          cover: "yellowcab.png"
+        },
+
+        {
+          id: 7,
           title: "Menstrual Cup Ad",
           categoriesList: [
             {
@@ -167,6 +135,34 @@ export default {
             }
           ],
           cover: "cup.png"
+        },
+
+        {
+          id: 8,
+          title: "Glossier",
+          categoriesList: [
+            {
+              categoryId: 1,
+              multimedia: "Motion"
+            }
+          ],
+          cover: "glossier.png"
+        },
+
+        {
+          id: 9,
+          title: "Ontario Summer",
+          categoriesList: [
+            {
+              categoryId: 1,
+              multimedia: "Motion"
+            },
+            {
+              categoryId: 2,
+              multimedia: "UI/UX"
+            }
+          ],
+          cover: "osummer.jpg"
         },
 
         {

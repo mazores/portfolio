@@ -393,9 +393,10 @@ export default {
             }
           ]
         },
+
         {
           id: 2,
-          title: "Meet HIV",
+          title: "Medical Website Template",
           categoriesList: [
             {
               categoryId: 1,
@@ -403,143 +404,45 @@ export default {
             },
             {
               categoryId: 2,
-              multimedia: "Motion"
-            },
-            {
-              categoryId: 3,
               multimedia: "Design"
-            }
-          ],
-          cover: "storiesfromthegrain.png",
-          herovideo: "hi",
-          heroimage: "storiesfromthegrain.png",
-          rolesList: [
-            {
-              roleId: 1,
-              job: "Project Manager"
-            }
-          ],
-          teamList: [
-            {
-              member: "Ifekitan Obasa"
             },
-            {
-              member: "Nour Al-Osman"
-            },
-            {
-              member: "Taylor Dronfield"
-            },
-            {
-              member: "Phrabjot Kaur"
-            }
           ],
+          heroimage: "hwcc.png",
           descriptions: [
             {
               descriptionId: 1,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "I have always wanted to design a website that followed the web trend of illustrations. I picked a medical/clinical website to design according to this trend."
             },
             {
               descriptionId: 2,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+              "Most medical websites today seem to blend together as they make use of the same aesthetic: green, blue, and red colors, generic photos, corporate fonts. I wanted to challenge this and stray away from this aesthetic to create a different design."
             },
             {
               descriptionId: 3,
               paragraph:
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+              "For this design, I wanted a balance between modern and professional, while injecting a little bit of fun. I achieved this by using illustrations as the website’s main images. I then used light but fun colors to complement the illustrations. By doing so, I was able to give focus to the illustrations. Lastly, I decided on a serif font that wasn’t too formal nor too quirky."
             }
           ],
           images: [
             {
               imageId: 1,
-              visual: "storiesfromthegrain01.gif"
+              visual: "hwcc01.png"
             },
             {
               imageId: 2,
-              visual: "storiesfromthegrain02.png"
+              visual: "hwcc02.png"
             },
             {
               imageId: 3,
-              visual: "storiesfromthegrain03.png"
-            },
-            {
-              imageId: 4,
-              visual: "storiesfromthegrain04.png"
-            },
-            {
-              imageId: 5,
-              visual: "storiesfromthegrain05.png"
-            },
-            {
-              imageId: 6,
-              visual: "storiesfromthegrain06.jpg"
-            },
-            {
-              imageId: 7,
-              visual: "storiesfromthegrain07.png"
-            },
-            {
-              imageId: 8,
-              visual: "storiesfromthegrain08.png"
-            },
-            {
-              imageId: 9,
-              visual: "storiesfromthegrain09.png"
+              visual: "hwcc03.png"
             }
           ]
         },
+
         {
           id: 3,
-          title: "Glossier",
-          categoriesList: [
-            {
-              categoryId: 1,
-              multimedia: "Motion"
-            }
-          ],
-          cover: "glossier.png",
-          herovideo: "hi",
-          heroimage: "glossier.png",
-          videoId: "YTpR3lp0QXE",
-          descriptions: [
-            {
-              descriptionId: 1,
-              paragraph:
-                "To practice Cinema4D’s morphing effect, we were tasked to create an advertisement." 
-            },
-            {
-              descriptionId: 2,
-              paragraph:
-                "Glossier is a beauty brand that focuses on creating and perfecting existing beauty products. They make products that people wish they had, thus their focus being on thoughtful design. They are known for being one of the first brands to market through social media and their customers as well as for the branding itself." 
-            },
-            {
-              descriptionId: 3,
-              paragraph:
-                "I decided to create an advertisement for them that features their make up set which involves three of their best-selling products - boy brow, cloud paint, and lash slick - which is why I thought it would be best to showcase this set."
-            }
-          ],
-          images: [
-            {
-              imageId: 1,
-              visual: "glossier01.jpg"
-            },
-            {
-              imageId: 2,
-              visual: "glossier02.jpg"
-            },
-            {
-              imageId: 3,
-              visual: "glossier03.jpg"
-            },
-            {
-              imageId: 4,
-              visual: "glossier04.jpg"
-            }
-          ]
-        },
-        {
-          id: 4,
           title: "Araw-Araw Desserts",
           categoriesList: [
             {
@@ -602,48 +505,74 @@ export default {
         },
 
         {
-          id: 5,
-          title: "Yellow Cab App",
+          id: 4,
+          title: "In Motion",
           categoriesList: [
             {
               categoryId: 1,
-              multimedia: "UI/UX"
+              multimedia: "Motion"
             },
             {
-              categoryId: 2,
-              multimedia: "Design"
+              categoryId: 1,
+              multimedia: "Branding"
             }
           ],
-          cover: "yellowcab.png",
-          herovideo: "",
-          heroimage: "yellowcab.png",
+          cover: "inmotion.png",
+          herovideo: "yes",
+          heroimage: "inmotion.png",
+          videoId: "GIrZhiTU_iw",
           descriptions: [
             {
               descriptionId: 1,
               paragraph:
-                "Yellow Cab is one of the biggest pizza chains in the Philippines. In relation to their name and product (New York-style pizza), they rely heavily on a New York-inspired branding, focusing specifically on one of New York’s symbols: the yellow cab."
+                "The emphasis of this project is to be able to animate HUDS and GUIS in AfterEffects and integrate it into the video, whose theme is “The Art and Physics of Sports.” However, proper branding was still needed."
             },
             {
               descriptionId: 2,
               paragraph:
-                "The app is designed and created for Yellow Cab customers who want another method to order from the chain. Through the app, they would be able to order food, access special promos, and contact customer service."
+                "The name “In Motion” come from the fact that physics is about matter and energy and how they interact with each other. Because the topic of the video is sports, In Motion was an apt title as the physics of sports study how sports interact with our bodies and other matter."
             },
             {
               descriptionId: 3,
               paragraph:
-                "Following their branding, the app is designed in the colors yellow and black, while using white as a balancing color. Another important aspect of Yellow Cab’s branding is their boldness which is applied in the font used as well as the icons, both of which has a bold look through the incorporation of heavy weights and outlines."
+                "I wanted the brand to still feel like typical HUDS and GUIS, but not completely. I did this by choosing a font that looks athletic while also looking futuristic. For the colors, I kept the typical light and dark blues but decided to use the bright and striking colors pink, purple, and yellow as a contrast to the darks."
+            },
+            {
+              descriptionId: 4,
+              paragraph:
+                "Besides trim paths and animating, I explored tracking and rotoscoping in much more depth. More than that, I was also able to explore how the animated HUDS and GUIS could interact with the videos much more seamlessly by checking for their motion and force."
             }
           ],
           images: [
             {
               imageId: 1,
-              visual: "yellowcab01.jpg"
+              visual: "inmotion01.gif"
+            },
+            {
+              imageId: 2,
+              visual: "inmotion02.gif"
+            },
+            {
+              imageId: 3,
+              visual: "inmotion03.jpg"
+            },
+            {
+              imageId: 4,
+              visual: "inmotion04.jpg"
+            },
+            {
+              imageId: 5,
+              visual: "inmotion05.jpg"
+            },
+            {
+              imageId: 6,
+              visual: "inmotion06.jpg"
             }
           ]
         },
 
         {
-          id: 6,
+          id: 5,
           title: "Thermal Security",
           categoriesList: [
             {
@@ -699,7 +628,135 @@ export default {
         },
 
         {
+          id: 6,
+          title: "Yellow Cab App",
+          categoriesList: [
+            {
+              categoryId: 1,
+              multimedia: "UI/UX"
+            },
+            {
+              categoryId: 2,
+              multimedia: "Design"
+            }
+          ],
+          cover: "yellowcab.png",
+          herovideo: "",
+          heroimage: "yellowcab.png",
+          descriptions: [
+            {
+              descriptionId: 1,
+              paragraph:
+                "Yellow Cab is one of the biggest pizza chains in the Philippines. In relation to their name and product (New York-style pizza), they rely heavily on a New York-inspired branding, focusing specifically on one of New York’s symbols: the yellow cab."
+            },
+            {
+              descriptionId: 2,
+              paragraph:
+                "The app is designed and created for Yellow Cab customers who want another method to order from the chain. Through the app, they would be able to order food, access special promos, and contact customer service."
+            },
+            {
+              descriptionId: 3,
+              paragraph:
+                "Following their branding, the app is designed in the colors yellow and black, while using white as a balancing color. Another important aspect of Yellow Cab’s branding is their boldness which is applied in the font used as well as the icons, both of which has a bold look through the incorporation of heavy weights and outlines."
+            }
+          ],
+          images: [
+            {
+              imageId: 1,
+              visual: "yellowcab01.jpg"
+            }
+          ]
+        },
+
+        {
           id: 7,
+          title: "Menstrual Cup Ad",
+          categoriesList: [
+            {
+              categoryId: 1,
+              multimedia: "Motion"
+            }
+          ],
+          cover: "cup.png",
+          herovideo: "yes",
+          heroimage: "cup.png",
+          videoId: "iF2vTpMO08Y",
+          descriptions: [
+            {
+              descriptionId: 1,
+              paragraph:
+                  "Something that I religiously stand for is the use of menstrual cups. I have always encouraged the people I know to start using them because it is so good for your body."
+            },
+            {
+              descriptionId: 2,
+              paragraph:
+                "I wanted to create an ad that showcased the menstrual cup differently. Usually, when one talks about the cup, they only talk about how it’s good for the environment. I wanted to talk about how it’s good for your body and/or period."
+            },
+            {
+              descriptionId: 3,
+              paragraph:
+                "However, I didn’t just want to talk and list all the benefits. I have always been interested in videos that are suggestive and controversial; the ones where you know what’s going on even though it doesn’t completely show it."
+            },
+            {
+              descriptionId: 4,
+              paragraph:
+                "My approach to the video was simple. I asked a question: If all the things that you hated about your period could be gone, would you take it? Meanwhile, symbols of these flashed on the screen (ex. Stains showed red paint dripping). By doing this, I am able to catch the user’s attention through the use of curiosity and images that are kind-of-gross-but-not-too-gross."
+            }
+          ]
+        },
+
+        {
+          id: 8,
+          title: "Glossier",
+          categoriesList: [
+            {
+              categoryId: 1,
+              multimedia: "Motion"
+            }
+          ],
+          cover: "glossier.png",
+          herovideo: "hi",
+          heroimage: "glossier.png",
+          videoId: "YTpR3lp0QXE",
+          descriptions: [
+            {
+              descriptionId: 1,
+              paragraph:
+                "To practice Cinema4D’s morphing effect, we were tasked to create an advertisement." 
+            },
+            {
+              descriptionId: 2,
+              paragraph:
+                "Glossier is a beauty brand that focuses on creating and perfecting existing beauty products. They make products that people wish they had, thus their focus being on thoughtful design. They are known for being one of the first brands to market through social media and their customers as well as for the branding itself." 
+            },
+            {
+              descriptionId: 3,
+              paragraph:
+                "I decided to create an advertisement for them that features their make up set which involves three of their best-selling products - boy brow, cloud paint, and lash slick - which is why I thought it would be best to showcase this set."
+            }
+          ],
+          images: [
+            {
+              imageId: 1,
+              visual: "glossier01.jpg"
+            },
+            {
+              imageId: 2,
+              visual: "glossier02.jpg"
+            },
+            {
+              imageId: 3,
+              visual: "glossier03.jpg"
+            },
+            {
+              imageId: 4,
+              visual: "glossier04.jpg"
+            }
+          ]
+        },
+
+        {
+          id: 9,
           title: "Ontario Summer",
           categoriesList: [
             {
@@ -773,105 +830,8 @@ export default {
           ]
         },
 
-        {
-          id: 8,
-          title: "In Motion",
-          categoriesList: [
-            {
-              categoryId: 1,
-              multimedia: "Design"
-            }
-          ],
-          cover: "inmotion.png",
-          herovideo: "yes",
-          heroimage: "inmotion.png",
-          videoId: "GIrZhiTU_iw",
-          descriptions: [
-            {
-              descriptionId: 1,
-              paragraph:
-                "The emphasis of this project is to be able to animate HUDS and GUIS in AfterEffects and integrate it into the video, whose theme is “The Art and Physics of Sports.” However, proper branding was still needed."
-            },
-            {
-              descriptionId: 2,
-              paragraph:
-                "The name “In Motion” come from the fact that physics is about matter and energy and how they interact with each other. Because the topic of the video is sports, In Motion was an apt title as the physics of sports study how sports interact with our bodies and other matter."
-            },
-            {
-              descriptionId: 3,
-              paragraph:
-                "I wanted the brand to still feel like typical HUDS and GUIS, but not completely. I did this by choosing a font that looks athletic while also looking futuristic. For the colors, I kept the typical light and dark blues but decided to use the bright and striking colors pink, purple, and yellow as a contrast to the darks."
-            },
-            {
-              descriptionId: 4,
-              paragraph:
-                "Besides trim paths and animating, I explored tracking and rotoscoping in much more depth. More than that, I was also able to explore how the animated HUDS and GUIS could interact with the videos much more seamlessly by checking for their motion and force."
-            }
-          ],
-          images: [
-            {
-              imageId: 1,
-              visual: "inmotion01.gif"
-            },
-            {
-              imageId: 2,
-              visual: "inmotion02.gif"
-            },
-            {
-              imageId: 3,
-              visual: "inmotion03.jpg"
-            },
-            {
-              imageId: 4,
-              visual: "inmotion04.jpg"
-            },
-            {
-              imageId: 5,
-              visual: "inmotion05.jpg"
-            },
-            {
-              imageId: 6,
-              visual: "inmotion06.jpg"
-            }
-          ]
-        },
 
-        {
-          id: 9,
-          title: "Menstrual Cup Ad",
-          categoriesList: [
-            {
-              categoryId: 1,
-              multimedia: "Motion"
-            }
-          ],
-          cover: "cup.png",
-          herovideo: "yes",
-          heroimage: "cup.png",
-          videoId: "iF2vTpMO08Y",
-          descriptions: [
-            {
-              descriptionId: 1,
-              paragraph:
-                  "Something that I religiously stand for is the use of menstrual cups. I have always encouraged the people I know to start using them because it is so good for your body."
-            },
-            {
-              descriptionId: 2,
-              paragraph:
-                "I wanted to create an ad that showcased the menstrual cup differently. Usually, when one talks about the cup, they only talk about how it’s good for the environment. I wanted to talk about how it’s good for your body and/or period."
-            },
-            {
-              descriptionId: 3,
-              paragraph:
-                "However, I didn’t just want to talk and list all the benefits. I have always been interested in videos that are suggestive and controversial; the ones where you know what’s going on even though it doesn’t completely show it."
-            },
-            {
-              descriptionId: 4,
-              paragraph:
-                "My approach to the video was simple. I asked a question: If all the things that you hated about your period could be gone, would you take it? Meanwhile, symbols of these flashed on the screen (ex. Stains showed red paint dripping). By doing this, I am able to catch the user’s attention through the use of curiosity and images that are kind-of-gross-but-not-too-gross."
-            }
-          ]
-        },
+        
 
         {
           id: 10,
