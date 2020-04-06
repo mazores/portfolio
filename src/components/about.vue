@@ -45,8 +45,8 @@
     <!-- About Text Content -->
     <div class="aboutContent">
       <b-container>
-        <b-row class="text-left">
-          <b-col sm="4" class="px-5">
+        <b-row class="text-left justify-content-center">
+          <b-col cols="5" sm="4" class="pr-lg-5" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in">
             <!-- v-for="folio in folios" :key="folio.id" v-bind:folio="folio" -->
             <h3>Values</h3>
             <div class="values" v-for="value in values" :key="value.id">
@@ -55,7 +55,7 @@
             </div>
           </b-col>
 
-          <b-col sm="4" class="px-5">
+          <b-col cols="5"  sm="4" class="pr-lg-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-easing="ease-in">
             <h3>Traits</h3>
             <div class="traits" v-for="trait in traits" :key="trait.id">
               <h4>{{ trait.title }}</h4>
@@ -63,7 +63,7 @@
             </div>
           </b-col>
 
-          <b-col sm="2">
+          <b-col cols="5" sm="2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600" data-aos-easing="ease-in">
             <h3>Skills</h3>
             <div class="skills" v-for="skill in skills" :key="skill.id">
               <h4>{{ skill.title }}</h4>
@@ -78,7 +78,7 @@
             </div>
           </b-col>
 
-          <b-col sm="2">
+          <b-col cols="5" sm="2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="900" data-aos-easing="ease-in">
             <h3>Tools</h3>
             <div class="tools" v-for="tool in tools" :key="tool.id">
               <h4>{{ tool.title }}</h4>
@@ -114,13 +114,13 @@ export default {
         {
           id: 1,
           title: "Beauty",
-          desc: "The interactive media design industry challenges the idea that beauty is superficial. Beauty is beautiful for the way that it is diverse yet universal. Each person’s understanding of what beauty is moves in different, crazy directions but it always moves towards the one, same feeling: how it is able to catch and attract a person and ultimately, kickstart a connection."
+          desc: "Beauty is diverse yet universal. Each person’s understanding of what beauty is moves in different, crazy directions but it always moves towards the one, same feeling: how it is able to catch and attract a person and ultimately, kickstart a connection."
         },
 
         {
           id: 2,
           title: "Brains",
-          desc: "I believe that ideas, logic, and research is the foundation where good and effective design is built on. It is what leads us to meaning and guides us through the choices we make in all areas of a project, whether it be brainstorming, research, implementation, and more. Without it, beauty is superficial. Without it, design loses its function and simply isn't design."
+          desc: "Ideas, logic, and research is the foundation where good and effective design is built on. It is what leads us to meaning and guides us through the choices we make in all areas of a project, whether it be brainstorming, research, implementation, and more. Without it, beauty is superficial. Without it, design loses its function and simply isn't design."
         },
 
         {
@@ -330,11 +330,6 @@ export default {
       color: $red;
       opacity: 1;
       transition: transform 0.5s;
-
-      // &:hover,
-      // :active {
-      //   transform: rotate(90deg);
-      // }
     }
 
     .close:not(:disabled):not(.disabled):focus,
@@ -388,7 +383,7 @@ export default {
       width: 100%;
       transition: all 400ms ease 0s;
 
-      &:hover {
+      &:active {
         cursor: pointer;
         -webkit-transition: all 400ms ease 0s;
         -webkit-transform: scale(1.1); 
@@ -398,7 +393,6 @@ export default {
         -moz-transformz : scale(1.1);
         transform: scale(1.1);   
       }
-
     }
   }
 
@@ -407,9 +401,9 @@ export default {
     background-color: $blue;
     z-index: 1;
     position: relative;
-    padding-top: 300px;
+    padding-top: 120px;
     padding-bottom: 50px;
-    margin-top: -200px;
+    margin-top: -100px;
     border-radius: 0 0 30px 30px;
 
     .skills,
@@ -443,5 +437,14 @@ h3 {
 h4 {
   color: $navy;
   margin: 0;
+}
+
+@media screen and (min-width: 720px) {
+  .aboutContainer {
+    .aboutContent {
+      margin-top: -200px;
+      padding-top: 250px;
+    }
+  }
 }
 </style>

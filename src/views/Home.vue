@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <headernav id="top" />
+    <headernav />
     <hello />
     <about id="about" />
     <projects v-bind:folios="folios" id="projects" />

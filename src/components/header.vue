@@ -1,5 +1,5 @@
 <template>
-  <div> 
+  <div id="top"> 
     <!-- MOBILE -->
     <div class="mobile-open-container" v-bind:class="{open: isActive}">
       <div class="mobile-open">
@@ -99,16 +99,6 @@ export default {
       // isActive = !isActive;
     // }
   }
-  //   watch: {
-  //   isNavActive: function() {
-  //     if(isActive == true){
-  //       document.documentElement.style.overflow = 'hidden'
-  //       return
-  //     }
-
-  //     document.documentElement.style.overflow = 'auto'
-  //   }
-  // }
 }
 </script>
 
@@ -120,7 +110,7 @@ nav {
   align-items: flex-start;
   justify-content: space-between;
   padding: 20px 20px 20px 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 
   .logo {
     img {
@@ -163,7 +153,6 @@ nav {
   background-color: $navy;
   right: -100vw;
   transition: right 1s ease-in-out 0.1s;
-  // display: none;
 
   .mobile-open {
     display: flex;
@@ -183,7 +172,6 @@ nav {
           padding: 0;
           margin: 0;
       }
-      
 
       img.close-button {
         width: 10%;
@@ -251,7 +239,6 @@ nav {
 }
 
 .open {
-  // display: block!important;
   right: 0vw!important;
 }
 

@@ -8,7 +8,7 @@
 
     <br><h1 data-aos="fade-up" data-aos-duration="400" data-aos-delay="1200" data-aos-easing="ease-out-back">a</h1> 
     <h1 data-aos="fade-up" data-aos-duration="400" data-aos-delay="1400" data-aos-easing="ease-out-back">multimedia</h1>
-    <h1 data-aos="fade-up" data-aos-duration="400" data-aos-delay="1600" data-aos-easing="ease-out-back">specialist.</h1>
+    <br><h1 data-aos="fade-up" data-aos-duration="400" data-aos-delay="1600" data-aos-easing="ease-out-back">specialist.</h1>
     <p data-aos="fade-up" data-aos-duration="300" data-aos-delay="2000" data-aos-easing="ease-in">
       I create multimedia solutions in different forms, whether it be through
       design, web development, motion, or all of the above.
@@ -23,26 +23,55 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .hello {
   margin: 0 auto;
-  padding-top: 130px;
+  padding-top: 0;
   text-align: left;
-  margin-bottom: 50px;
+  margin-top: -100px;
+  margin-bottom: 30px;
 
   h2 {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 5px;
     color: $navy;
+    line-height: 20px;
   }
-   
+
   h1 {
     color: $red;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 5px;
+    line-height: 30px;
   }
 
   p {
-    width: 30%;
-  } 
+    width: 60%;
+  }
 }
+
+// TABLET
+@media screen and (min-width: 768px) {
+  .hello {
+    padding-top: 130px;
+    margin-bottom: 50px;
+    margin-top: 0;
+
+    h2 {
+      margin-right: 10px;
+      line-height: 30px;
+    }
+    
+    h1 {
+      margin-right: 10px;
+      line-height: 40px;
+    }
+
+    p {
+      width: 30%;
+    } 
+  }
+}
+
+
 </style>

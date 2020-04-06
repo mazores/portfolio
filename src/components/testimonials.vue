@@ -77,19 +77,21 @@ export default {
 .testimonialsContainer {
   background-color: $navy;
   width: 100%;
+  padding: 0 10px;
   border-radius: 30px 30px 0 0;
 
   .testimonials {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
-    padding-top: 130px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     .carousel {
       h2 {
         letter-spacing: 1px;
         line-height: 1.4;
         padding: 10px 10px;
+        font-size: 14px;
       }
 
       .slide {
@@ -112,4 +114,74 @@ export default {
     color: $blue;
   }
 }
+
+@media screen and (min-width: 375px) {
+  .testimonialsContainer {
+    padding: 0 30px;
+    .testimonials {
+      padding-top: 100px;
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .testimonialsContainer {
+    padding: 0 100px;
+
+    .testimonials {
+      padding-top: 100px;
+
+      .carousel {
+        h2 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonialsContainer {
+    padding: 0 150px;
+  }
+}
+
+// .testimonialsContainer {
+//   background-color: $navy;
+//   width: 100%;
+//   border-radius: 30px 30px 0 0;
+
+//   .testimonials {
+//     width: 60%;
+//     margin: 0 auto;
+//     padding-top: 130px;
+//     padding-bottom: 100px;
+
+//     .carousel {
+//       h2 {
+//         letter-spacing: 1px;
+//         line-height: 1.4;
+//         padding: 10px 10px;
+//       }
+
+//       .slide {
+//         align-items: center;
+//       }
+//     }
+//   }
+// }
+
+// .slide:nth-child(1n) {
+//   h2,
+//   h5 {
+//     color: $yellow;
+//   }
+// }
+
+// .slide:nth-child(2n) {
+//   h2,
+//   h5 {
+//     color: $blue;
+//   }
+// }
 </style>
