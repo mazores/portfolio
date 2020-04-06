@@ -32,6 +32,7 @@ export default {
   h2 {
     display: inline-block;
     margin-right: 10px;
+    color: $navy;
   }
    
   h1 {
@@ -42,6 +43,6 @@ export default {
 
   p {
     width: 30%;
-  }
+  } 
 }
 </style>

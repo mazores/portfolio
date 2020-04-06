@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app"> 
     <!-- 
     <div id="nav">
       <router-link to="/">Home</router-link> |
@@ -20,19 +20,8 @@ body[data-aos-duration='4000'] [data-aos],
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
 
-    &.router-link-exact-active {
-      color: $blue;
-    }
-  }
-}
 </style>
