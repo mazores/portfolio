@@ -1,69 +1,195 @@
 <template>
-  <div id="top"> 
+  <div id="top">
     <!-- MOBILE -->
-    <div class="mobile-open-container" v-bind:class="{open: isActive}">
+    <div class="mobile-open-container" v-bind:class="{ open: isActive }">
       <div class="mobile-open">
         <div class="mobile-open-nav">
-          <img src="@/assets/logo.svg" alt="Mikka Azores cover photo" class="logo" />
-          <img @click="isActive = !isActive" src="@/assets/icon-close.svg" alt="close button" class="close-button" />
+          <img
+            src="@/assets/logo.svg"
+            alt="Mikka Azores cover photo"
+            class="logo"
+          />
+          <img
+            @click="isActive = !isActive"
+            src="@/assets/icon-close.svg"
+            alt="close button"
+            class="close-button"
+          />
         </div>
 
         <ul>
-          <li @click="isActive = !isActive" data-aos="fade-down" data-aos-duration="800" data-aos-delay="2000" data-aos-easing="ease-out-back"><a href="#" v-scroll-to="'#top'">Home</a></li>
-          <li @click="isActive = !isActive" data-aos="fade-down" data-aos-duration="800" data-aos-delay="2100" data-aos-easing="ease-out-back"><a href="#" v-scroll-to="'#about'">About</a></li>
-          <li @click="isActive = !isActive" data-aos="fade-down" data-aos-duration="800" data-aos-delay="2200" data-aos-easing="ease-out-back"><a href="#" v-scroll-to="'#projects'">Work</a></li>
-          <li @click="isActive = !isActive" data-aos="fade-down" data-aos-duration="800" data-aos-delay="2300" data-aos-easing="ease-out-back"><a href="#" v-scroll-to="'#testimonials'">What People Say</a></li>
-          <li @click="isActive = !isActive" data-aos="fade-down" data-aos-duration="800" data-aos-delay="2400" data-aos-easing="ease-out-back"><a href="#" v-scroll-to="'#contact'">Contact</a></li>
+          <li
+            @click="isActive = !isActive"
+            data-aos="fade-down"
+            data-aos-duration="800"
+            data-aos-delay="2000"
+            data-aos-easing="ease-out-back"
+          >
+            <a href="#" v-scroll-to="'#top'">Home</a>
+          </li>
+          <li
+            @click="isActive = !isActive"
+            data-aos="fade-down"
+            data-aos-duration="800"
+            data-aos-delay="2100"
+            data-aos-easing="ease-out-back"
+          >
+            <a href="#" v-scroll-to="'#about'">About</a>
+          </li>
+          <li
+            @click="isActive = !isActive"
+            data-aos="fade-down"
+            data-aos-duration="800"
+            data-aos-delay="2200"
+            data-aos-easing="ease-out-back"
+          >
+            <a href="#" v-scroll-to="'#projects'">Work</a>
+          </li>
+          <li
+            @click="isActive = !isActive"
+            data-aos="fade-down"
+            data-aos-duration="800"
+            data-aos-delay="2300"
+            data-aos-easing="ease-out-back"
+          >
+            <a href="#" v-scroll-to="'#testimonials'">What People Say</a>
+          </li>
+          <li
+            @click="isActive = !isActive"
+            data-aos="fade-down"
+            data-aos-duration="800"
+            data-aos-delay="2400"
+            data-aos-easing="ease-out-back"
+          >
+            <a href="#" v-scroll-to="'#contact'">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
 
-    <nav class="scrolling-nav-mobile"
+    <nav
+      class="scrolling-nav-mobile"
       data-aos="fade-down"
       data-aos-anchor="#trigger-nav"
-      data-aos-anchor-placement="center-center">
-      <div class="logo" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="3000" data-aos-easing="ease-out-back">
-          <img src="@/assets/logo.svg" alt="Mikka Azores cover photo" />
-        </div>
+      data-aos-anchor-placement="center-center"
+    >
+      <div
+        class="logo"
+        data-aos="zoom-in"
+        data-aos-duration="600"
+        data-aos-delay="3000"
+        data-aos-easing="ease-out-back"
+      >
+        <img src="@/assets/logo.svg" alt="Mikka Azores cover photo" />
+      </div>
 
-      <div class="burger-menu" data-aos="fade-down" data-aos-duration="600" data-aos-delay="2300" data-aos-easing="ease-out-back">
-        <img @click="isActive = !isActive" src="@/assets/icon-burger.svg" alt="Burger Menu" />
+      <div
+        class="burger-menu"
+        data-aos="fade-down"
+        data-aos-duration="600"
+        data-aos-delay="2300"
+        data-aos-easing="ease-out-back"
+      >
+        <img
+          @click="isActive = !isActive"
+          src="@/assets/icon-burger.svg"
+          alt="Burger Menu"
+        />
       </div>
     </nav>
 
     <nav class="mobile">
       <a href="#" v-scroll-to="'#top'">
-        <div class="logo" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="3000" data-aos-easing="ease-out-back">
+        <div
+          class="logo"
+          data-aos="zoom-in"
+          data-aos-duration="600"
+          data-aos-delay="3000"
+          data-aos-easing="ease-out-back"
+        >
           <img src="@/assets/logo.svg" alt="Mikka Azores cover photo" />
         </div>
       </a>
 
-      <div class="burger-menu" data-aos="fade-down" data-aos-duration="600" data-aos-delay="2300" data-aos-easing="ease-out-back">
-        <img @click="isActive = !isActive" src="@/assets/icon-burger.svg" alt="Burger Menu" />
+      <div
+        class="burger-menu"
+        data-aos="fade-down"
+        data-aos-duration="600"
+        data-aos-delay="2300"
+        data-aos-easing="ease-out-back"
+      >
+        <img
+          @click="isActive = !isActive"
+          src="@/assets/icon-burger.svg"
+          alt="Burger Menu"
+        />
       </div>
     </nav>
 
     <!-- DESKTOP -->
     <nav class="tablet">
       <a href="#" v-scroll-to="'#top'">
-        <div class="logo" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="3000" data-aos-easing="ease-out-back">
+        <div
+          class="logo"
+          data-aos="zoom-in"
+          data-aos-duration="600"
+          data-aos-delay="3000"
+          data-aos-easing="ease-out-back"
+        >
           <img src="@/assets/logo.svg" alt="Mikka Azores cover photo" />
         </div>
       </a>
 
       <ul>
-        <li data-aos="fade-down" data-aos-duration="800" data-aos-delay="2000" data-aos-easing="ease-out-back"><a href="#" v-scroll-to="'#top'">Home</a></li>
-        <li data-aos="fade-down" data-aos-duration="800" data-aos-delay="2100" data-aos-easing="ease-out-back"><a href="#" v-scroll-to="'#about'">About</a></li>
-        <li data-aos="fade-down" data-aos-duration="800" data-aos-delay="2200" data-aos-easing="ease-out-back"><a href="#" v-scroll-to="'#projects'">Work</a></li>
-        <li data-aos="fade-down" data-aos-duration="800" data-aos-delay="2300" data-aos-easing="ease-out-back"><a href="#" v-scroll-to="'#testimonials'">What People Say</a></li>
-        <li data-aos="fade-down" data-aos-duration="800" data-aos-delay="2400" data-aos-easing="ease-out-back"><a href="#" v-scroll-to="'#contact'">Contact</a></li>
+        <li
+          data-aos="fade-down"
+          data-aos-duration="800"
+          data-aos-delay="2000"
+          data-aos-easing="ease-out-back"
+        >
+          <a href="#" v-scroll-to="'#top'">Home</a>
+        </li>
+        <li
+          data-aos="fade-down"
+          data-aos-duration="800"
+          data-aos-delay="2100"
+          data-aos-easing="ease-out-back"
+        >
+          <a href="#" v-scroll-to="'#about'">About</a>
+        </li>
+        <li
+          data-aos="fade-down"
+          data-aos-duration="800"
+          data-aos-delay="2200"
+          data-aos-easing="ease-out-back"
+        >
+          <a href="#" v-scroll-to="'#projects'">Work</a>
+        </li>
+        <li
+          data-aos="fade-down"
+          data-aos-duration="800"
+          data-aos-delay="2300"
+          data-aos-easing="ease-out-back"
+        >
+          <a href="#" v-scroll-to="'#testimonials'">What People Say</a>
+        </li>
+        <li
+          data-aos="fade-down"
+          data-aos-duration="800"
+          data-aos-delay="2400"
+          data-aos-easing="ease-out-back"
+        >
+          <a href="#" v-scroll-to="'#contact'">Contact</a>
+        </li>
       </ul>
     </nav>
 
-    <nav class="scrolling-nav"
+    <nav
+      class="scrolling-nav"
       data-aos="fade-down"
       data-aos-anchor="#trigger-nav"
-      data-aos-anchor-placement="center-center">
+      data-aos-anchor-placement="center-center"
+    >
       <div class="logo">
         <img src="@/assets/logo.svg" alt="Mikka Azores cover photo" />
       </div>
@@ -92,18 +218,21 @@ export default {
   data() {
     return {
       isActive: false
-    }
+    };
   },
   methods: {
     // openNav: function() {
-      // isActive = !isActive;
+    // isActive = !isActive;
     // }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
-.tablet, .scrolling-nav { display: none; }
+.tablet,
+.scrolling-nav {
+  display: none;
+}
 nav {
   display: flex;
   flex-direction: row;
@@ -120,13 +249,13 @@ nav {
 
       &:hover {
         -webkit-transition: all 200ms ease 0s;
-        -webkit-transform: scale(1.1); 
+        -webkit-transform: scale(1.1);
         -ms-transition: all 200ms ease 0s;
-        -ms-transform: scale(1.1); 
+        -ms-transform: scale(1.1);
         -moz-transition: all 200ms ease 0s;
-        -moz-transformz : scale(1.1);
+        -moz-transformz: scale(1.1);
         transition: all 200ms ease 0s;
-        transform: scale(1.1);   
+        transform: scale(1.1);
         cursor: pointer;
       }
     }
@@ -137,10 +266,11 @@ nav {
       opacity: 1;
       transition: transform 1s, opacity 1s ease;
 
-        &:hover, :active {
-          opacity: 0;
-          transform: rotate(90deg) scale(0);
-        }
+      &:hover,
+      :active {
+        opacity: 0;
+        transform: rotate(90deg) scale(0);
+      }
     }
   }
 }
@@ -166,11 +296,11 @@ nav {
       flex-direction: row;
       align-items: flex-start;
       justify-content: space-between;
-      
+
       img {
-          width: 30%;
-          padding: 0;
-          margin: 0;
+        width: 30%;
+        padding: 0;
+        margin: 0;
       }
 
       img.close-button {
@@ -187,14 +317,14 @@ nav {
     ul {
       text-decoration: none;
       list-style-type: none;
-      margin-block-start: 0!important;
-      margin-block-end: 0!important;
-      margin-inline-start: 0!important;
-      margin-inline-end: 0!important;
-      padding-inline-start: 0!important;
+      margin-block-start: 0 !important;
+      margin-block-end: 0 !important;
+      margin-inline-start: 0 !important;
+      margin-inline-end: 0 !important;
+      padding-inline-start: 0 !important;
       margin: 0 auto;
       height: 80vh;
-      padding-top: 80px; 
+      padding-top: 80px;
 
       li {
         display: block;
@@ -229,8 +359,8 @@ nav {
           }
 
           &:hover:after {
-            width: 100%; 
-            left: 0; 
+            width: 100%;
+            left: 0;
           }
         }
       }
@@ -239,7 +369,7 @@ nav {
 }
 
 .open {
-  right: 0vw!important;
+  right: 0vw !important;
 }
 
 .scrolling-nav-mobile {
@@ -250,7 +380,7 @@ nav {
   padding: 15px 25px 15px 0;
   background-color: $navy;
   opacity: 0.8;
-  align-items: center!important;
+  align-items: center !important;
 
   .logo {
     img {
@@ -266,15 +396,18 @@ nav {
         padding-top: 150px;
       }
     }
-  }  
+  }
 }
 
 // TABLET
 @media screen and (min-width: 768px) {
-  .mobile, .mobile-open-container { display: none; }
+  .mobile,
+  .mobile-open-container {
+    display: none;
+  }
 
   .tablet {
-    display: block; 
+    display: block;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -288,13 +421,13 @@ nav {
 
         &:hover {
           -webkit-transition: all 200ms ease 0s;
-          -webkit-transform: scale(1.1); 
+          -webkit-transform: scale(1.1);
           -ms-transition: all 200ms ease 0s;
-          -ms-transform: scale(1.1); 
+          -ms-transform: scale(1.1);
           -moz-transition: all 200ms ease 0s;
-          -moz-transformz : scale(1.1);
+          -moz-transformz: scale(1.1);
           transition: all 200ms ease 0s;
-          transform: scale(1.1);   
+          transform: scale(1.1);
           cursor: pointer;
         }
       }
@@ -338,8 +471,8 @@ nav {
           }
 
           &:hover:after {
-            width: 100%; 
-            left: 0; 
+            width: 100%;
+            left: 0;
           }
         }
       }
@@ -402,8 +535,8 @@ nav {
           }
 
           &:hover:after {
-            width: 100%; 
-            left: 0; 
+            width: 100%;
+            left: 0;
           }
         }
       }
@@ -443,13 +576,13 @@ nav {
 
 //         &:hover {
 //           -webkit-transition: all 200ms ease 0s;
-//           -webkit-transform: scale(1.1); 
+//           -webkit-transform: scale(1.1);
 //           -ms-transition: all 200ms ease 0s;
-//           -ms-transform: scale(1.1); 
+//           -ms-transform: scale(1.1);
 //           -moz-transition: all 200ms ease 0s;
 //           -moz-transformz : scale(1.1);
 //           transition: all 200ms ease 0s;
-//           transform: scale(1.1);   
+//           transform: scale(1.1);
 //           cursor: pointer;
 //         }
 //       }
@@ -494,8 +627,8 @@ nav {
 //           }
 
 //           &:hover:after {
-//             width: 100%; 
-//             left: 0; 
+//             width: 100%;
+//             left: 0;
 //           }
 //         }
 //       }

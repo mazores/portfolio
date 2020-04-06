@@ -4,8 +4,7 @@
       <carousel
         class="carousel"
         :per-page="1"
-        :navigate-to="someLocalProperty"
-        centerMode="true"
+        centerMode: true
         :mouse-drag="false"
         :loop="true"
         :autoplay="true"
@@ -142,46 +141,15 @@ export default {
 
 @media screen and (min-width: 1024px) {
   .testimonialsContainer {
-    padding: 0 150px;
+    padding: 0 200px;
+
+    .testimonials {
+      .carousel {
+        h2 {
+          font-size: 28px;
+        }
+      }
+    }
   }
 }
-
-// .testimonialsContainer {
-//   background-color: $navy;
-//   width: 100%;
-//   border-radius: 30px 30px 0 0;
-
-//   .testimonials {
-//     width: 60%;
-//     margin: 0 auto;
-//     padding-top: 130px;
-//     padding-bottom: 100px;
-
-//     .carousel {
-//       h2 {
-//         letter-spacing: 1px;
-//         line-height: 1.4;
-//         padding: 10px 10px;
-//       }
-
-//       .slide {
-//         align-items: center;
-//       }
-//     }
-//   }
-// }
-
-// .slide:nth-child(1n) {
-//   h2,
-//   h5 {
-//     color: $yellow;
-//   }
-// }
-
-// .slide:nth-child(2n) {
-//   h2,
-//   h5 {
-//     color: $blue;
-//   }
-// }
 </style>

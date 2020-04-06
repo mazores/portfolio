@@ -4,28 +4,28 @@
       <!-- <router-link :to="{ name: 'Project', params: { id: `${previousFolio}` } }"> -->
       <div v-if="this.$route.params.id == 1">
         <b-button disabled class="project-nav-button">
-            <img
+          <img
             src="@/assets/icon-arrow-back.svg"
             alt="previous project button"
             class="previous"
-            />
-            <p>Previous Project</p>
+          />
+          <p>Previous Project</p>
         </b-button>
       </div>
 
       <div v-else>
         <router-link :to="{ name: 'Project', params: { id: previousFolio } }">
-            <b-button class="project-nav-button">
-                <img
-                src="@/assets/icon-arrow-back.svg"
-                alt="previous project button"
-                class="previous"
-                />
-                <p>Previous Project</p>
-            </b-button>
+          <b-button class="project-nav-button">
+            <img
+              src="@/assets/icon-arrow-back.svg"
+              alt="previous project button"
+              class="previous"
+            />
+            <p>Previous Project</p>
+          </b-button>
         </router-link>
       </div>
-      
+
       <router-link to="/">
         <b-button class="project-nav-button to-projects">
           <img
@@ -36,29 +36,29 @@
         </b-button>
       </router-link>
 
-        <div v-if="this.$route.params.id == 10">
-            <b-button disabled class="project-nav-button">
-                <p>Next Project</p>
-                <img
-                src="@/assets/icon-arrow-next.svg"
-                alt="next project button"
-                class="next"
-                />
-            </b-button>
-        </div>
+      <div v-if="this.$route.params.id == 10">
+        <b-button disabled class="project-nav-button">
+          <p>Next Project</p>
+          <img
+            src="@/assets/icon-arrow-next.svg"
+            alt="next project button"
+            class="next"
+          />
+        </b-button>
+      </div>
 
-        <div v-else>
-            <router-link :to="{ name: 'Project', params: { id: nextFolio } }">
-                <b-button class="project-nav-button">
-                    <p>Next Project</p>
-                    <img
-                    src="@/assets/icon-arrow-next.svg"
-                    alt="next project button"
-                    class="next"
-                    />
-                </b-button>
-            </router-link>
-        </div>
+      <div v-else>
+        <router-link :to="{ name: 'Project', params: { id: nextFolio } }">
+          <b-button class="project-nav-button">
+            <p>Next Project</p>
+            <img
+              src="@/assets/icon-arrow-next.svg"
+              alt="next project button"
+              class="next"
+            />
+          </b-button>
+        </router-link>
+      </div>
     </div>
 
     <section
@@ -265,7 +265,11 @@
         :key="folio.id"
         v-bind:folio="folio"
       >
-        <youtube :video-id="folio.videoId" ref="youtube" @playing="playing"></youtube>
+        <youtube
+          :video-id="folio.videoId"
+          ref="youtube"
+          @playing="playing"
+        ></youtube>
       </div>
     </b-modal>
     <footercomp />
@@ -283,7 +287,7 @@ export default {
   // props: ["folios"],
   data() {
     return {
-    //   folioId: this.$route.params.id,
+      //   folioId: this.$route.params.id,
       folios: [
         {
           id: 1,
@@ -349,8 +353,8 @@ export default {
                 "Lastly, the website was built with the knowledge that the Ifugao youth was not as technologically savvy. With this in mind, I made sure that the website was direct to the point. It provided instructions to the user, whether it be as simple as clicking next and back to scroll through a carousel or clicking a button to go to another page."
             },
             {
-            descriptionId: 7,
-            paragraph:
+              descriptionId: 7,
+              paragraph:
                 "Creating a multimedia solution for indigenous peoples involve dealing with very sensitive topics. I had to make sure that the project did not misrepresent or disrespect the Ifugaos’ culture, while also making sure that it was worthy of representing them. In order to do this, I worked very closely with the Ifugaos. I had to go through a process and request approval from their local government. I worked closely with one of the IPEd curriculum’s author who provided me guidance in making sure that my information and illustrations were accurate. I hired an Ifugao translator and narrators for my videos just so that I can create it in their dialect. Most importantly, I worked closely with the Ifugao students; I consulted with them through focus group discussions and quality test sessions."
             }
           ],
@@ -405,7 +409,7 @@ export default {
             {
               categoryId: 2,
               multimedia: "Design"
-            },
+            }
           ],
           heroimage: "hwcc.png",
           descriptions: [
@@ -417,12 +421,12 @@ export default {
             {
               descriptionId: 2,
               paragraph:
-              "Most medical websites today seem to blend together as they make use of the same aesthetic: green, blue, and red colors, generic photos, corporate fonts. I wanted to challenge this and stray away from this aesthetic to create a different design."
+                "Most medical websites today seem to blend together as they make use of the same aesthetic: green, blue, and red colors, generic photos, corporate fonts. I wanted to challenge this and stray away from this aesthetic to create a different design."
             },
             {
               descriptionId: 3,
               paragraph:
-              "For this design, I wanted a balance between modern and professional, while injecting a little bit of fun. I achieved this by using illustrations as the website’s main images. I then used light but fun colors to complement the illustrations. By doing so, I was able to give focus to the illustrations. Lastly, I decided on a serif font that wasn’t too formal nor too quirky."
+                "For this design, I wanted a balance between modern and professional, while injecting a little bit of fun. I achieved this by using illustrations as the website’s main images. I then used light but fun colors to complement the illustrations. By doing so, I was able to give focus to the illustrations. Lastly, I decided on a serif font that wasn’t too formal nor too quirky."
             }
           ],
           images: [
@@ -477,7 +481,7 @@ export default {
             {
               descriptionId: 5,
               paragraph:
-                "The photos are greatly used throughout the website and it is balanced out by solid shapes and colors. With only three pages, the website is able to achieve a simple and straightforward design." 
+                "The photos are greatly used throughout the website and it is balanced out by solid shapes and colors. With only three pages, the website is able to achieve a simple and straightforward design."
             }
           ],
           images: [
@@ -685,7 +689,7 @@ export default {
             {
               descriptionId: 1,
               paragraph:
-                  "Something that I religiously stand for is the use of menstrual cups. I have always encouraged the people I know to start using them because it is so good for your body."
+                "Something that I religiously stand for is the use of menstrual cups. I have always encouraged the people I know to start using them because it is so good for your body."
             },
             {
               descriptionId: 2,
@@ -722,12 +726,12 @@ export default {
             {
               descriptionId: 1,
               paragraph:
-                "To practice Cinema4D’s morphing effect, we were tasked to create an advertisement." 
+                "To practice Cinema4D’s morphing effect, we were tasked to create an advertisement."
             },
             {
               descriptionId: 2,
               paragraph:
-                "Glossier is a beauty brand that focuses on creating and perfecting existing beauty products. They make products that people wish they had, thus their focus being on thoughtful design. They are known for being one of the first brands to market through social media and their customers as well as for the branding itself." 
+                "Glossier is a beauty brand that focuses on creating and perfecting existing beauty products. They make products that people wish they had, thus their focus being on thoughtful design. They are known for being one of the first brands to market through social media and their customers as well as for the branding itself."
             },
             {
               descriptionId: 3,
@@ -830,9 +834,6 @@ export default {
           ]
         },
 
-
-        
-
         {
           id: 10,
           title: "Maybelline",
@@ -903,13 +904,13 @@ export default {
     },
 
     nextFolio: function() {
-        let nextId = parseInt(this.$route.params.id);
-        return nextId = nextId + 1;
+      let nextId = parseInt(this.$route.params.id);
+      return (nextId = nextId + 1);
     },
 
     previousFolio: function() {
-        let previousId = parseInt(this.$route.params.id);
-        return previousId = previousId - 1;
+      let previousId = parseInt(this.$route.params.id);
+      return (previousId = previousId - 1);
     }
   }
 };
@@ -945,7 +946,7 @@ export default {
     text-decoration: none;
 
     &:hover {
-        text-decoration: none;
+      text-decoration: none;
     }
   }
 
@@ -973,159 +974,159 @@ export default {
       }
     }
 
-  .to-projects {
-    transition: transform 1s;
-
-    &:hover,
-    :active {
-      transform: rotate(90deg);
-    }
-  }
-}
-
-.project-hero-container {
-  width: 100vw;
-  height: 80vh;
-  padding-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: $blue;
-  border-radius: 0 0 30px 30px;
-
-  .project-details-hero {
-    .with-video {
-        &:hover {
-            cursor: pointer;
-        }
-    }
-
-    .heroimgContainer {
-      width: 90%;
-      margin: 0 auto;
-      border-radius: 20px;
-      z-index: 2;
-      overflow: hidden;
-      position: relative;
-      transition: box-shadow 0.5s;
+    .to-projects {
+      transition: transform 1s;
 
       &:hover,
       :active {
-        box-shadow: 10px 10px $yellow;
-      }
-
-      .play {
-        height: 3.3vh;
-        position: absolute;
-        top: 50%;
-      }
-
-      img {
-        width: 100%;
-      }
-    }
-
-    .scroll-down-container {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 0;
-
-      .scroll-down {
-        background: none;
-        border: none;
+        transform: rotate(90deg);
       }
     }
   }
-}
 
-.border-design {
-  position: absolute;
-  width: 100vw;
-  height: 10vh;
-  border-radius: 0 0 30px 30px;
-}
+  .project-hero-container {
+    width: 100vw;
+    height: 80vh;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $blue;
+    border-radius: 0 0 30px 30px;
 
-.red {
-  background-color: $red;
-  margin-top: -30px;
-  z-index: -1;
-}
+    .project-details-hero {
+      .with-video {
+        &:hover {
+          cursor: pointer;
+        }
+      }
 
-.yellow {
-  background-color: $yellow;
-  margin-top: -10px;
-  z-index: -2;
-}
+      .heroimgContainer {
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 20px;
+        z-index: 2;
+        overflow: hidden;
+        position: relative;
+        transition: box-shadow 0.5s;
 
-.project-details-description {
-  position: relative;
-  margin-top: 40px;
-  text-align: left;
+        &:hover,
+        :active {
+          box-shadow: 10px 10px $yellow;
+        }
 
-  h2 {
-    color: $red;
-    margin-bottom: 10px;
-  }
-  h4 {
-    color: $blue;
-    margin-bottom: 15px;
-  }
+        .play {
+          height: 3.3vh;
+          position: absolute;
+          top: 50%;
+        }
 
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 0;
+        img {
+          width: 100%;
+        }
+      }
 
-    li {
-      display: inline;
-      padding: 0 5px 0 0;
+      .scroll-down-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+
+        .scroll-down {
+          background: none;
+          border: none;
+        }
+      }
     }
   }
 
-  .project-info {
-    p {
+  .border-design {
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    border-radius: 0 0 30px 30px;
+  }
+
+  .red {
+    background-color: $red;
+    margin-top: -30px;
+    z-index: -1;
+  }
+
+  .yellow {
+    background-color: $yellow;
+    margin-top: -10px;
+    z-index: -2;
+  }
+
+  .project-details-description {
+    position: relative;
+    margin-top: 40px;
+    text-align: left;
+
+    h2 {
       color: $red;
-      margin: 0;
-      line-height: 0;
+      margin-bottom: 10px;
     }
-
-    .project-category li {
-      display: inline-block;
+    h4 {
       color: $blue;
-      padding: 0 5px 0 0;
+      margin-bottom: 15px;
     }
 
-    .role,
-    .team,
-    .award {
-      margin: 15px 0 15px 0;
-    }
-  }
-
-  .project-description {
     ul {
-      li {
-        display: block;
-      }
-    }
-  }
-}
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 0;
 
-.project-images {
-  ul {
-    list-style-type: none;
-    li {
-      img {
-        width: 100%;
-        height: 100%;
-        margin-bottom: 10px;
+      li {
+        display: inline;
+        padding: 0 5px 0 0;
+      }
+    }
+
+    .project-info {
+      p {
+        color: $red;
+        margin: 0;
+        line-height: 0;
+      }
+
+      .project-category li {
+        display: inline-block;
+        color: $blue;
+        padding: 0 5px 0 0;
+      }
+
+      .role,
+      .team,
+      .award {
+        margin: 15px 0 15px 0;
+      }
+    }
+
+    .project-description {
+      ul {
+        li {
+          display: block;
+        }
       }
     }
   }
-}
+
+  .project-images {
+    ul {
+      list-style-type: none;
+      li {
+        img {
+          width: 100%;
+          height: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 375px) {
@@ -1205,20 +1206,19 @@ export default {
 }
 
 @media screen and (min-width: 1024px) {
-.project-details {
-  .project-details-description {
+  .project-details {
+    .project-details-description {
       margin-top: 130px;
-  }
+    }
 
-  .red {
-    margin-top: -80px;
-  }
+    .red {
+      margin-top: -80px;
+    }
 
-  .yellow {
-    margin-top: -35px;
+    .yellow {
+      margin-top: -35px;
+    }
   }
-}
-
 }
 
 @media screen and (min-width: 1280px) {
@@ -1231,7 +1231,7 @@ export default {
       h4 {
         margin-bottom: 15px;
       }
-      
+
       .project-info {
         p {
           color: $red;
@@ -1250,12 +1250,11 @@ export default {
   }
 
   .red {
-    margin-top: -30px!important;
+    margin-top: -30px !important;
   }
 
   .yellow {
-    margin-top: 10px!important;
+    margin-top: 10px !important;
   }
 }
-
 </style>

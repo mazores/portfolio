@@ -5,8 +5,7 @@
         <b-col class="text-left" sm="4">
           <div class="contacttext">
             <h2>
-              Let's create
-              together.
+              Let's create together.
             </h2>
             <p>
               If you want to collaborate, hire me, ask questions, or even just
@@ -153,13 +152,12 @@ export default {
   .contactus {
     .contactContainer {
       .contact-form {
-      input[type="submit"] {
-        width: 50%;
+        input[type="submit"] {
+          width: 50%;
+        }
       }
     }
-    }
   }
-  
 }
 
 @media screen and (min-width: 1024px) {

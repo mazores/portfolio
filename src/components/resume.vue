@@ -8,7 +8,7 @@
               <kinesis-element :strength="10">
                 <img src="@/assets/resume.svg" alt="resume icon" />
               </kinesis-element>
-                <h3>Read resume</h3>
+              <h3>Read resume</h3>
             </b-button>
           </kinesis-container>
         </b-col>
@@ -19,7 +19,7 @@
               <kinesis-element :strength="10">
                 <img src="@/assets/funfact.svg" alt="fun fact icon" />
               </kinesis-element>
-                <h3>Click for a fun fact!</h3>
+              <h3>Click for a fun fact!</h3>
             </b-button>
           </kinesis-container>
         </b-col>
@@ -148,7 +148,7 @@ export default {
       .iconsContainer {
         .icons {
           flex-direction: row;
-          
+
           img {
             margin-right: 30px;
           }

@@ -3,9 +3,9 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 //import Project from "../views/ProjectItem.vue";
 import VueYoutube from "vue-youtube";
-import VueKinesis from 'vue-kinesis'
-import VuePageTransition from 'vue-page-transition'
- 
+import VueKinesis from "vue-kinesis";
+import VuePageTransition from "vue-page-transition";
+
 Vue.use(VueRouter);
 Vue.use(VueYoutube);
 Vue.use(VueKinesis);
@@ -39,7 +39,7 @@ const router = new VueRouter({
 
 router.beforeEach((to, from, next) => {
   window.scrollTo(0, 0);
-  
+
   // More code ...
 
   next();
