@@ -1,13 +1,13 @@
 <template>
   <div class="contactus">
     <b-container class="contactContainer">
-      <b-row>
-        <b-col class="text-left">
+      <b-row class="justify-content-center">
+        <b-col class="text-left" sm="4">
           <div class="contacttext">
-            <h1>
-              Let's create a beautiful, smart, and meaningful something
+            <h2>
+              Let's create
               together.
-            </h1>
+            </h2>
             <p>
               If you want to collaborate, hire me, ask questions, or even just
               talk, come say hi!
@@ -15,7 +15,7 @@
           </div>
         </b-col>
 
-        <b-col>
+        <b-col sm="6">
           <form class="contact-form" @submit.prevent="sendEmail">
             <input
               type="text"
@@ -85,19 +85,17 @@ export default {
   border-bottom: 50px solid $yellow;
 
   .contactContainer {
-    padding: 100px 50px;
+    padding: 60px 50px;
 
     .contacttext {
       width: 70%;
 
-      h1 {
-        font-size: 40px !important;
+      h2 {
         color: $yellow;
       }
 
       p {
         color: $yellow;
-        font-size: 28px;
         line-height: 1.5;
       }
     }
@@ -107,18 +105,18 @@ export default {
       textarea {
         display: block;
         width: 100%;
-        padding: 10px;
+        padding: 5px 10px;
         margin-bottom: 15px;
         background-color: $yellow;
         border: none;
         border-radius: 4px;
         color: $navy;
         font-family: $Karla;
-        font-size: 24px;
+        font-size: 16px;
       }
 
       textarea {
-        height: 200px;
+        height: 150px;
       }
 
       input:focus,
@@ -128,7 +126,7 @@ export default {
       }
 
       input[type="submit"] {
-        width: 50%;
+        width: 80%;
         background-color: $blue;
         border: none !important;
         color: $navy;
@@ -141,12 +139,36 @@ export default {
           color: $blue;
         }
       }
-    
 
       .noshadow {
         -webkit-box-shadow: none !important;
         -moz-box-shadow: none !important;
         box-shadow: none !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .contactus {
+    .contactContainer {
+      .contact-form {
+      input[type="submit"] {
+        width: 50%;
+      }
+    }
+    }
+  }
+  
+}
+
+@media screen and (min-width: 1024px) {
+  .contactus {
+    .contactContainer {
+      .contacttext {
+        h2 {
+          font-size: 48px;
+        }
       }
     }
   }

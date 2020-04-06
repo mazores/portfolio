@@ -108,19 +108,18 @@ export default {
     .iconsContainer {
       .icons {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         background: none;
         border: none;
 
         img {
-          //display: inline-block;
-          margin-right: 30px;
+          width: 75%;
+          margin-right: 0;
         }
 
         h3 {
-          //display: inline;
           color: $yellow;
           margin-top: 10px;
         }
@@ -139,6 +138,23 @@ export default {
 
   img {
     width: 100%;
+  }
+}
+
+// TABLET
+@media screen and (min-width: 768px) {
+  .resume {
+    .container {
+      .iconsContainer {
+        .icons {
+          flex-direction: row;
+          
+          img {
+            margin-right: 30px;
+          }
+        }
+      }
+    }
   }
 }
 </style>
