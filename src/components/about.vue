@@ -284,6 +284,29 @@ export default {
               expertise: "3D Animation"
             }
           ]
+        },
+
+        {
+          id: 4,
+          title: "Photography",
+          skillLists: [
+            {
+              skillListsId: 1,
+              expertise: "Product"
+            },
+            {
+              skillListsId: 2,
+              expertise: "Food"
+            },
+            {
+              skillListsId: 3,
+              expertise: "Landscape"
+            },
+            {
+              skillListsId: 3,
+              expertise: "Portrait"
+            }
+          ]
         }
       ],
 
@@ -434,6 +457,10 @@ export default {
         -moz-transition: all 400ms ease 0s;
         -moz-transformz: scale(1.1);
         transform: scale(1.1);
+      }
+
+      &:hover {
+        cursor: pointer;
       }
     }
   }

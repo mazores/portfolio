@@ -74,7 +74,8 @@
       data-aos-easing="ease-in"
     >
       I create multimedia solutions in different forms, whether it be through
-      design, web development, motion, or all of the above.
+      design, web development, motion, or all of the above. 
+      Watch my demo reel below.
     </p>
   </b-container>
 </template>

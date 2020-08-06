@@ -36,6 +36,29 @@ export default {
       folios: [
         {
           id: 1,
+          title: "Meet HIV",
+          categoriesList: [
+            {
+              categoryId: 1,
+              multimedia: "UI/UX"
+            },
+            {
+              categoryId: 2,
+              multimedia: "Motion"
+            },
+            {
+              categoryId: 3,
+              multimedia: "Design"
+            },
+            {
+              categoryId: 4,
+              multimedia: "Web"
+            }
+          ],
+          cover: "meethiv.png"
+        },
+        {
+          id: 2,
           title: "Stories from the Grain",
           categoriesList: [
             {
@@ -53,21 +76,6 @@ export default {
           ],
           cover: "storiesfromthegrain.png"
         },
-        {
-          id: 2,
-          title: "Medical Website Template",
-          categoriesList: [
-            {
-              categoryId: 1,
-              multimedia: "Web"
-            },
-            {
-              categoryId: 2,
-              multimedia: "Design"
-            }
-          ],
-          cover: "hwcc.png"
-        },
 
         {
           id: 3,
@@ -76,6 +84,10 @@ export default {
             {
               categoryId: 1,
               multimedia: "Web"
+            },
+            {
+              categoryId: 2,
+              multimedia: "Photography"
             }
           ],
           cover: "araw.png"
@@ -99,6 +111,22 @@ export default {
 
         {
           id: 5,
+          title: "Maybelline",
+          categoriesList: [
+            {
+              categoryId: 1,
+              multimedia: "Design"
+            },
+            {
+              categoryId: 2,
+              multimedia: "Motion"
+            }
+          ],
+          cover: "mny.png"
+        },
+
+        {
+          id: 6,
           title: "Thermal Security",
           categoriesList: [
             {
@@ -110,47 +138,7 @@ export default {
         },
 
         {
-          id: 6,
-          title: "Yellow Cab App",
-          categoriesList: [
-            {
-              categoryId: 1,
-              multimedia: "UI/UX"
-            },
-            {
-              categoryId: 2,
-              multimedia: "Design"
-            }
-          ],
-          cover: "yellowcab.png"
-        },
-
-        {
           id: 7,
-          title: "Menstrual Cup Ad",
-          categoriesList: [
-            {
-              categoryId: 1,
-              multimedia: "Motion"
-            }
-          ],
-          cover: "cup.png"
-        },
-
-        {
-          id: 8,
-          title: "Glossier",
-          categoriesList: [
-            {
-              categoryId: 1,
-              multimedia: "Motion"
-            }
-          ],
-          cover: "glossier.png"
-        },
-
-        {
-          id: 9,
           title: "Ontario Summer",
           categoriesList: [
             {
@@ -166,19 +154,43 @@ export default {
         },
 
         {
-          id: 10,
-          title: "Maybelline",
+          id: 8,
+          title: "Menstrual Cup Ad",
           categoriesList: [
             {
               categoryId: 1,
-              multimedia: "Design"
-            },
-            {
-              categoryId: 2,
               multimedia: "Motion"
             }
           ],
-          cover: "mny.png"
+          cover: "cup.png"
+        },
+
+        {
+          id: 9,
+          title: "Glossier",
+          categoriesList: [
+            {
+              categoryId: 1,
+              multimedia: "Motion"
+            }
+          ],
+          cover: "glossier.png"
+        },
+
+        {
+          id: 10,
+          title: "Yellow Cab App",
+          categoriesList: [
+            {
+              categoryId: 1,
+              multimedia: "UI/UX"
+            },
+            {
+              categoryId: 2,
+              multimedia: "Design"
+            }
+          ],
+          cover: "yellowcab.png"
         }
       ]
     };
